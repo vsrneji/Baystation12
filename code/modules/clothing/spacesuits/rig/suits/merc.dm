@@ -1,6 +1,29 @@
 /obj/item/clothing/head/helmet/space/rig/merc
 	light_overlay = "helmet_light_dual_green"
 	camera = /obj/machinery/camera/network/mercenary
+	armor = list(melee = 80, bullet = 65, laser = 65, energy = 15, bomb = 80, bio = 100, rad = 60)
+
+/obj/item/clothing/suit/space/rig/merc
+	armor = list(melee = 80, bullet = 65, laser = 65, energy = 15, bomb = 80, bio = 100, rad = 60)
+
+/obj/item/clothing/shoes/magboots/rig/merc
+	armor = list(melee = 80, bullet = 65, laser = 65, energy = 15, bomb = 80, bio = 100, rad = 60)
+
+/obj/item/clothing/gloves/rig/merc
+	armor = list(melee = 80, bullet = 65, laser = 65, energy = 15, bomb = 80, bio = 100, rad = 60)
+
+/obj/item/clothing/head/helmet/space/rig/merc/heavy
+	armor = list(melee = 90, bullet = 80, laser = 80, energy = 25, bomb = 90, bio = 100, rad = 70)
+
+/obj/item/clothing/suit/space/rig/merc/heavy
+	armor = list(melee = 90, bullet = 80, laser = 80, energy = 25, bomb = 90, bio = 100, rad = 70)
+
+/obj/item/clothing/shoes/magboots/rig/merc/heavy
+	armor = list(melee = 90, bullet = 80, laser = 80, energy = 25, bomb = 90, bio = 100, rad = 70)
+
+/obj/item/clothing/gloves/rig/merc/heavy
+	armor = list(melee = 90, bullet = 80, laser = 80, energy = 25, bomb = 90, bio = 100, rad = 70)
+
 
 /obj/item/weapon/rig/merc
 	name = "crimson hardsuit control module"
@@ -13,6 +36,9 @@
 	offline_vision_restriction = TINT_HEAVY
 
 	helm_type = /obj/item/clothing/head/helmet/space/rig/merc
+	chest_type = /obj/item/clothing/suit/space/rig/merc
+	boot_type = /obj/item/clothing/shoes/magboots/rig/merc
+	glove_type = /obj/item/clothing/gloves/rig/merc
 	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/tank,/obj/item/device/suit_cooling_unit,/obj/item/weapon/gun,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/melee/energy/sword,/obj/item/weapon/handcuffs)
 
 	initial_modules = list(
@@ -45,6 +71,10 @@
 	offline_slowdown = 4
 	online_slowdown = 2
 
+	helm_type = /obj/item/clothing/head/helmet/space/rig/merc/heavy
+	chest_type = /obj/item/clothing/suit/space/rig/merc/heavy
+	boot_type = /obj/item/clothing/shoes/magboots/rig/merc/heavy
+	glove_type = /obj/item/clothing/gloves/rig/merc/heavy
 	sprite_sheets = list(
 		SPECIES_UNATHI = 'icons/mob/onmob/Unathi/rig_back.dmi'
 		)

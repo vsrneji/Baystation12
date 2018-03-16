@@ -1,7 +1,12 @@
 /obj/item/ammo_casing/a22lr
-	desc = "A .22LR bullet casing."
+	desc = "A .22LR full metal jaket bullet casing."
 	caliber = "22"
 	projectile_type = /obj/item/projectile/bullet/pistol/tiny
+
+/obj/item/ammo_casing/a22lr/ap
+	desc = "A .22LR armor pirsing bullet casing."
+	caliber = "22"
+	projectile_type = /obj/item/projectile/bullet/pistol/tiny/ap
 
 /obj/item/ammo_casing/a22lr/rubber
 	desc = "A .22LR rubber bullet casing."
@@ -103,9 +108,14 @@
 	projectile_type = /obj/item/projectile/energy/flash
 
 /obj/item/ammo_casing/a10mm
-	desc = "A 10mm bullet casing."
+	desc = "A 10mm FMJ bullet casing."
 	caliber = "10mm"
 	projectile_type = /obj/item/projectile/bullet/pistol/medium/smg
+
+/obj/item/ammo_casing/a10mm/ap
+	desc = "A 10mm AP bullet casing."
+	caliber = "10mm"
+	projectile_type = /obj/item/projectile/bullet/pistol/medium/smg/ap
 
 /obj/item/ammo_casing/shotgun
 	name = "shotgun slug"

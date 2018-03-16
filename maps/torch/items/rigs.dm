@@ -96,19 +96,23 @@
 
 	chest_type = /obj/item/clothing/suit/space/rig/command/co
 	helm_type = /obj/item/clothing/head/helmet/space/rig/command/co
-	boot_type = /obj/item/clothing/shoes/magboots/rig/command
-	glove_type = /obj/item/clothing/gloves/rig/command
+	boot_type = /obj/item/clothing/shoes/magboots/rig/command/co
+	glove_type = /obj/item/clothing/gloves/rig/command/co
 
 	allowed = list(/obj/item/weapon/gun, /obj/item/ammo_magazine, /obj/item/device/flashlight, /obj/item/weapon/tank, /obj/item/device/suit_cooling_unit, /obj/item/weapon/storage/secure/briefcase)
 
 	req_access = list(access_captain)
 
 /obj/item/clothing/head/helmet/space/rig/command/co
+	armor = list(melee = 50, bullet = 40, laser = 30, energy = 20, bomb = 40, bio = 100, rad = 50)
 	icon_state = "command_CO_rig"
 /obj/item/clothing/suit/space/rig/command/co
+	armor = list(melee = 50, bullet = 40, laser = 30, energy = 20, bomb = 40, bio = 100, rad = 50)
 	icon_state = "command_CO_rig"
 /obj/item/clothing/shoes/magboots/rig/command/co
+	armor = list(melee = 50, bullet = 40, laser = 30, energy = 20, bomb = 40, bio = 100, rad = 50)
 /obj/item/clothing/gloves/rig/command/co
+	armor = list(melee = 50, bullet = 40, laser = 30, energy = 20, bomb = 40, bio = 100, rad = 50)
 
 
 /obj/item/weapon/rig/command/co/equipped

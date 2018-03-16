@@ -27,17 +27,18 @@
 
 /obj/item/projectile/beam/smalllaser
 	damage = 25
+	armor_penetration = 8
 
 /obj/item/projectile/beam/midlaser
-	damage = 50
-	armor_penetration = 10
+	damage = 40
+	armor_penetration = 25
 
 /obj/item/projectile/beam/heavylaser
 	name = "heavy laser"
 	icon_state = "heavylaser"
 	fire_sound = 'sound/weapons/lasercannonfire.ogg'
-	damage = 60
-	armor_penetration = 30
+	damage = 50
+	armor_penetration = 35
 
 	muzzle_type = /obj/effect/projectile/laser/heavy/muzzle
 	tracer_type = /obj/effect/projectile/laser/heavy/tracer
