@@ -1,3 +1,18 @@
+/client/proc/print_data()
+	set category = "Debug"
+	set name = "ZZZDamage data"
+	var/list/dat = list("<B> Number\tPath\tName\tForce</B><HR> ")
+	var/count = 0
+	dat += "<table border='1'>"
+	for(var/path in subtypesof(/obj/item))
+		var/obj/item/I = path
+		var/name = initial(I.name)
+		var/force = initial(I.force)
+		count++
+		dat += "<tr><th>[count]</th><th>[I]</th><th>[name]</th><th>[force]</th></tr>"
+		src << browse(jointext(dat, "\n"), "window=debug")
+
+
 /client/proc/Debug2()
 	set category = "Debug"
 	set name = "Debug-Game"

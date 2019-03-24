@@ -230,7 +230,8 @@ var/list/admin_verbs_debug = list(
 	/client/proc/cmd_analyse_health_panel,
 	/client/proc/reestablish_db_connection,
 	/client/proc/visualpower,
-	/client/proc/visualpower_remove
+	/client/proc/visualpower_remove,
+	/client/proc/print_data
 	)
 
 var/list/admin_verbs_paranoid_debug = list(
