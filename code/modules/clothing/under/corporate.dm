@@ -7,7 +7,7 @@
 	icon_state = "guard"
 	item_state = "w_suit"
 	worn_state = "guard"
-	armor = list(melee = 10, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 5, rad = 0)
+	armor = list(melee = 4, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 5, rad = 0)
 	siemens_coefficient = 0.9
 	item_icons = list(slot_w_uniform_str = 'icons/mob/onmob/onmob_under_corporate.dmi')
 	gender_icons = 1

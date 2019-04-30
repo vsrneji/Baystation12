@@ -10,7 +10,7 @@
 	gas_transfer_coefficient = 0.01
 	permeability_coefficient = 0.01
 	siemens_coefficient = 0.9
-	armor = list(melee = 5, bullet = 5, laser = 5, energy = 0, bomb = 0, bio = 75, rad = 0)
+	armor = list(melee = 5, bullet = 1, laser = 5, energy = 0, bomb = 0, bio = 75, rad = 0)
 	var/clogged
 	var/filter_water
 	var/gas_filter_strength = 1			//For gas mask filters
@@ -54,7 +54,7 @@
 	siemens_coefficient = 0.7
 	body_parts_covered = FACE
 	w_class = ITEM_SIZE_SMALL
-	armor = list(melee = 10, bullet = 10, laser = 10, energy = 0, bomb = 0, bio = 55, rad = 0)
+	armor = list(melee = 10, bullet = 3, laser = 3, energy = 0, bomb = 0, bio = 55, rad = 0)
 	sprite_sheets = list(
 		SPECIES_TAJARA = 'icons/mob/species/tajaran/mask.dmi',
 		SPECIES_UNATHI = 'icons/mob/onmob/Unathi/mask.dmi',
@@ -70,7 +70,7 @@
 	icon_state = "gas_mask"
 	item_state = "gas_mask"
 	body_parts_covered = FACE|EYES
-	armor = list(melee = 5, bullet = 5, laser = 5, energy = 0, bomb = 0, bio = 75, rad = 25)
+	armor = list(melee = 5, bullet = 1, laser = 5, energy = 0, bomb = 0, bio = 75, rad = 25)
 
 /obj/item/clothing/mask/gas/budget
 	name = "gas mask"
@@ -78,7 +78,7 @@
 	icon_state = "gas_alt"
 	item_state = "gas_alt"
 	body_parts_covered = FACE|EYES
-	armor = list(melee = 5, bullet = 5, laser = 5, energy = 0, bomb = 0, bio = 25, rad = 0)
+	armor = list(melee = 5, bullet = 1, laser = 5, energy = 0, bomb = 0, bio = 25, rad = 0)
 
 /obj/item/clothing/mask/gas/swat
 	name = "\improper SWAT mask"
@@ -87,7 +87,7 @@
 	item_state = "swat"
 	siemens_coefficient = 0.7
 	body_parts_covered = FACE|EYES
-	armor = list(melee = 15, bullet = 15, laser = 15, energy = 0, bomb = 0, bio = 75, rad = 0)
+	armor = list(melee = 15, bullet = 5, laser = 7, energy = 0, bomb = 0, bio = 75, rad = 0)
 
 /obj/item/clothing/mask/gas/syndicate
 	name = "tactical mask"
@@ -95,7 +95,7 @@
 	icon_state = "swat"
 	item_state = "swat"
 	siemens_coefficient = 0.7
-	armor = list(melee = 15, bullet = 15, laser = 15, energy = 0, bomb = 0, bio = 75, rad = 0)
+	armor = list(melee = 15, bullet = 5, laser = 7, energy = 0, bomb = 0, bio = 75, rad = 0)
 
 /obj/item/clothing/mask/gas/death_commando
 	name = "\improper Death Commando Mask"

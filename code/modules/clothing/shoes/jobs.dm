@@ -17,7 +17,7 @@
 	icon_state = "jackboots"
 	item_state = "jackboots"
 	force = 3
-	armor = list(melee = 30, bullet = 10, laser = 10, energy = 15, bomb = 20, bio = 0, rad = 0)
+	armor = list(melee = 30, bullet = 3, laser = 5, energy = 15, bomb = 20, bio = 0, rad = 0)
 	siemens_coefficient = 0.7
 	can_hold_knife = 1
 	cold_protection = FEET
@@ -35,7 +35,7 @@
 	desc = "A pair of steel-toed work boots designed for use in industrial settings. Safety first."
 	icon_state = "workboots"
 	item_state = "workboots"
-	armor = list(melee = 40, bullet = 0, laser = 0, energy = 15, bomb = 20, bio = 0, rad = 20)
+	armor = list(melee = 40, bullet = 0, laser = 0, energy = 15, bomb = 20, bio = 0, rad = 0)
 	siemens_coefficient = 0.7
 	can_hold_knife = 1
 
