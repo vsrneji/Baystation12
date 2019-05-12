@@ -71,6 +71,12 @@
 			return stomach.ingested
 	return touching // Kind of a shitty hack, but makes more sense to me than digesting them.
 
+/mob/living/carbon/human/proc/metabolize_ingested_reagents()
+	if(should_have_organ(BP_STOMACH))
+		var/obj/item/organ/internal/stomach/stomach = internal_organs_by_name[BP_STOMACH]
+		if(stomach)
+			stomach.metabolize()
+
 /mob/living/carbon/human/get_fullness()
 	if(!should_have_organ(BP_STOMACH))
 		return ..()
@@ -403,6 +409,23 @@
 	if(href_list["item"])
 		if(!handle_strip(href_list["item"],usr,locate(href_list["holder"])))
 			show_inv(usr)
+
+	if(href_list["check_records"])
+		if(!isghost(usr))
+			return
+		var/dat = list()
+		if(public_record)
+			dat += "<b>GENERAL NOTES:</b><br>[pencode2html(public_record)]<br><hr>"
+		if(med_record)
+			dat += "<b>MEDICAL RECORD:</b><br>[pencode2html(med_record)]<br><hr>"
+		if(sec_record)
+			dat += "<b>SECURITY RECORD:</b><br>[pencode2html(sec_record)]<br><hr>"
+		if(gen_record)
+			dat += "<b>EMPLOYMENT RECORD:</b><br>[pencode2html(gen_record)]<br><hr>"
+
+		var/datum/browser/popup = new(usr, "records", "[real_name]'s records", 520, 640)
+		popup.set_content(jointext(dat, null))
+		popup.open()
 
 	if(href_list["ooc_notes"])
 		src.Examine_OOC()

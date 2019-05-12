@@ -51,6 +51,7 @@ knayu - skrell
 coldmantis13 - skrell
 s1334 - skrell
 logfol - skrell
+laxesh - skrell
 cre77 - resomi
 s1334 - resomi
 shokumar - resomi
@@ -116,6 +117,7 @@ diesiege - vox
 vanya0 - vox
 logfol - vox
 hellpony - vox
+reptiloid2 - vox
 darkscarletblood - unathi
 kribleykrabley - unathi
 alchemisthero - unathi
@@ -141,7 +143,6 @@ blacksoul231 - tajaran
 richardfox - tajaran
 ashtonfox - tajaran
 mrnicolas - tajaran
-coolered - tajaran
 furrydog - tajaran
 rarytech - tajaran
 romeo517 - tajaran

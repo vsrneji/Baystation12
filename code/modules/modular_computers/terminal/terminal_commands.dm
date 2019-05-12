@@ -131,7 +131,6 @@ Subtypes
 	name = "status"
 	man_entry = list("Format: status", "Reports network status information.")
 	pattern = "^status$"
-	req_access = list(access_network)
 
 /datum/terminal_command/status/proper_input_entered(text, mob/user, terminal)
 	. = list()
@@ -293,7 +292,7 @@ Subtypes
 	CT.update_icon()
 	return "Shutdown successful."
 
-//TODO-ELar-inf: Soon i'll finish it.
+//TODO-Elar-inf: Soon i'll finish it.
 /*/datum/terminal_command/run
 	name = "run"
 	man_entry = list("Format: run \[program name\]", "Runs the program from local memory using it name.")
@@ -319,8 +318,8 @@ Subtypes
 	man_entry = list("Format: session; session -kill",
 					"Utilite for manipulations with active programs",
 					"As session return list of active PRG programs.",
-					"Option -kill kill all active PRG programs"/*,
-					"Option -restore open all active programs."*/)
+					"Option -kill kill all active PRG programs",
+					"Option -restore open interface of devise.")
 	pattern = "^session"
 	skill_needed = SKILL_ADEPT
 
@@ -332,6 +331,9 @@ Subtypes
 	if(!CT.processor_unit.check_functionality())
 		return "session: Access attempt to RAM failed. Check integrity of your CPU."
 	var/ermsg = " programs is absent"
+	if(copytext(text, 8) == " -restore")
+		CT.ui_interact(user)
+		return
 	if(copytext(text,8) == " -kill")
 		if(CT.idle_threads)
 			for(PRG in CT.idle_threads)
@@ -364,5 +366,75 @@ Subtypes
 	if(massive_of_active_progs)
 		return massive_of_active_progs
 	return "session: Wrong input. Enter man session for syntax help."
+
+/datum/terminal_command/telnet
+	name = "telnet"
+	man_entry = list("Format: telnet \[NID\] \[LOGIN\] : \[PASSWORD\].",
+					"Access remote terminal with login and password",
+					"If NID \< 100 write NID like 001.",
+					"Use `telnet` to README and config security of your devise.")
+	pattern = "^telnet"
+
+/datum/terminal_command/telnet/proper_input_entered(text, mob/user, datum/terminal/terminal)
+	var/obj/item/modular_computer/CT = terminal.computer
+
+	if(!copytext(text,7))
+		if(CT.hard_drive)
+			if(!CT.hard_drive.find_file_by_name("TNet_CONFIG") && !CT.hard_drive.find_file_by_name("TNet_CONFIG_README"))
+				var/datum/computer_file/data/config/file = CT.hard_drive.find_file_by_name("TNet_CONFIG")
+				if(!istype(file))
+					file = new()
+					file.filename = "TNet_CONFIG"
+					CT.hard_drive.store_file(file) // May fail, which is fine with us.
+					file.stored_data += "ROOT : ROOT" //LOGIN : PASSWORD
+				var/datum/computer_file/data/text/file_README = CT.hard_drive.find_file_by_name("TNet_CONFIG_README")
+				if(!istype(file_README))
+					file_README = new()
+					file_README.filename = "TNet_CONFIG_README"
+					CT.hard_drive.store_file(file_README) // May fail, which is fine with us.
+					file_README.stored_data += "\[large\]\[b\]DO NOT DELETE FILE TNet_CONFIG IF YOU DO NOT WANT TO PUT YOUR DEVICE AT RISK \[/b\]\[/large\]\[br\]" //LOGIN : PASSWORD
+					file_README.stored_data += "Format login and password in TNet_CONFIG: \[LOGIN\] : \[PASSWORD\].\[br\]"
+					file_README.stored_data += "Login must contain only 4 characters, password may be anything."
+				return "Config file created. Check config README to study how to change the login and password."
+			else
+				return "Config and config README already created."
+
+	if(istype(terminal, /datum/terminal/remote))
+		return "telnet is not supported on remote terminals."
+	if(!CT || !CT.get_ntnet_status())
+		return "telnet: Check network connectivity."
+
+	var/nid = text2num(copytext(text, 8, 11))
+	if(copytext(nid, 1,3) == "00")
+		nid = copytext(nid, 3,4)
+	else if(copytext(nid, 1,2) == "0")
+		nid = copytext(nid, 2,3)
+	var/obj/item/modular_computer/comp = ntnet_global.get_computer_by_nid(nid)
+
+	if(comp == CT)
+		return "telnet: Error; can not open remote terminal to self."
+	if(!comp || !comp.enabled || !comp.get_ntnet_status())
+		return "telnet: No active device with this nid found."
+	if(comp.has_terminal(user))
+		return "telnet: A remote terminal to this device is already active."
+
+	var/datum/computer_file/data/config/cfg_file = comp.hard_drive.find_file_by_name("TNet_CONFIG")
+	if(comp.hard_drive.find_file_by_name("TNet_CONFIG"))
+		var/login = copytext(cfg_file.stored_data, 1, 5)
+		var/password = copytext(cfg_file.stored_data, 8)
+		if(copytext(text, 12,16) == login)
+			if(copytext(text, 17) == password)
+				var/datum/terminal/remote/new_term = new (user, comp, CT)
+				LAZYADD(comp.terminals, new_term)
+				LAZYADD(CT.terminals, new_term)
+				return "<font color='#00ff00'>telnet: Connection established with login: [login], and password: [password].</font>"
+			else
+				return "<font color='#ff0000'>telnet: INCORRECT PASSWORD.</font>"
+		else
+			return "<font color='#ff0000'>telnet: INCORRECT LOGIN.</font>"
+	var/datum/terminal/remote/new_term = new (user, comp, CT)
+	LAZYADD(comp.terminals, new_term)
+	LAZYADD(CT.terminals, new_term)
+	return "telnet: Connection established."
 
 //[/INFINITY]_______________________________________________________________________________________________________________
