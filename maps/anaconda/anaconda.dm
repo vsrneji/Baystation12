@@ -16,6 +16,8 @@
 	#include "anaconda_turfs.dm"
 	#include "anaconda_unit_testing.dm"
 
+	#include "anaconda_define.dm"
+
 	/*#include "datums/uniforms.dm"
 	#include "datums/reports.dm"
 	#include "datums/shackle_law_sets.dm"
