@@ -342,8 +342,12 @@ Subtypes
 		return "session: Access attempt to RAM failed. Check integrity of your CPU."
 	var/ermsg = " programs is absent"
 	if(copytext(text, 8) == " -restore")
+		if(istype(terminal, /datum/terminal/remote))
+			var/datum/topic_state/remote/RIN = new(user, terminal.computer, GLOB.default_state)
+			LAZYADD(CT.terminals, RIN)
+			return "session: remote interface established."
 		CT.ui_interact(user)
-		return
+		return "session: interface established."
 	if(copytext(text,8) == " -kill")
 		if(CT.idle_threads)
 			for(PRG in CT.idle_threads)
