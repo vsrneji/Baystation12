@@ -1,21 +1,3 @@
-var/const/access_aquila = 76
-/datum/access/aquila
-	id = access_aquila
-	desc = "Aquila"
-	region = ACCESS_REGION_RESEARCH
-
-/var/const/access_expedition_shuttle_helm = 77
-/datum/access/exploration_shuttle_helm
-	id = access_expedition_shuttle_helm
-	desc = "Charon Helm"
-	region = ACCESS_REGION_RESEARCH
-
-/var/const/access_expedition_shuttle = 88
-/datum/access/exploration_shuttle
-	id = access_expedition_shuttle
-	desc = "Charon"
-	region = ACCESS_REGION_RESEARCH
-
 /var/const/access_guppy = 89
 /datum/access/guppy
 	id = access_guppy

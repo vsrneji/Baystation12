@@ -1,5 +1,5 @@
-/obj/effect/overmap/ship/sierra
-	name = "NSV Sierra"
+/obj/effect/overmap/ship/anaconda
+	name = "ITV Anaconda"
 	fore_dir = WEST
 	vessel_mass = 28000
 	start_x = 4
@@ -9,9 +9,7 @@
 	icon = 'icons/obj/overmap_inf.dmi'
 
 	initial_restricted_waypoints = list(
-		"Charon" = list("nav_hangar_calypso"),
-		"Guppy" = list("nav_hangar_guppy"),
-		"Albatross" = list("nav_albatross_dock")
+		"Guppy" = list("nav_hangar_guppy")
 	)
 
 	initial_generic_waypoints = list(
@@ -35,22 +33,8 @@
 		"nav_deck3_guppy",
 		"nav_deck4_guppy",
 		"nav_deck1_salvage",
-		"nav_bridge_guppy",
-		"nav_hangar_aquila",
-		"nav_deck1_aquila",
-		"nav_deck2_aquila",
-		"nav_deck3_aquila",
-		"nav_deck4_aquila",
-		"nav_bridge_aquila"
-
+		"nav_bridge_guppy"
 	)
-
-/obj/effect/overmap/ship/landable/exploration_shuttle
-	name = "Charon"
-	shuttle = "Charon"
-	max_speed = 1/(4 SECONDS)
-	burn_delay = 2 SECONDS
-	fore_dir = NORTH
 
 /obj/effect/overmap/ship/landable/guppy
 	name = "Guppy"
@@ -59,11 +43,6 @@
 	burn_delay = 2 SECONDS
 	vessel_mass = 1700
 	fore_dir = SOUTH
-
-/obj/machinery/computer/shuttle_control/explore/exploration_shuttle
-	name = "charon control console"
-	shuttle_tag = "Charon"
-	req_access = list(access_expedition_shuttle_helm)
 
 /obj/machinery/computer/shuttle_control/explore/guppy
 	name = "guppy control console"
