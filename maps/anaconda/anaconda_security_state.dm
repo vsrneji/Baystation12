@@ -14,17 +14,17 @@
 #define PSI_IMPLANT_DISABLED  "Disabled"
 #endif
 
-/datum/map/sierra // setting the map to use this list
-	security_state = /decl/security_state/default/sierradept
+/datum/map/anaconda // setting the map to use this list
+	security_state = /decl/security_state/default/anacondadept
 
-//Sierra map alert levels. Refer to security_state.dm.
-/decl/security_state/default/sierradept
-	all_security_levels = list(/decl/security_level/default/sierradept/code_green, /decl/security_level/default/sierradept/code_violet, /decl/security_level/default/sierradept/code_orange, /decl/security_level/default/sierradept/code_blue, /decl/security_level/default/sierradept/code_red, /decl/security_level/default/code_delta)
+//anaconda map alert levels. Refer to security_state.dm.
+/decl/security_state/default/anacondadept
+	all_security_levels = list(/decl/security_level/default/anacondadept/code_green, /decl/security_level/default/anacondadept/code_violet, /decl/security_level/default/anacondadept/code_orange, /decl/security_level/default/anacondadept/code_blue, /decl/security_level/default/anacondadept/code_red, /decl/security_level/default/code_delta)
 
-/decl/security_level/default/sierradept
-	icon = 'maps/sierra/icons/security_state.dmi'
+/decl/security_level/default/anacondadept
+	icon = 'maps/anaconda/icons/security_state.dmi'
 
-/decl/security_level/default/sierradept/code_green
+/decl/security_level/default/anacondadept/code_green
 	name = "code green"
 	icon = 'icons/misc/security_state.dmi'
 
@@ -39,11 +39,11 @@
 
 	var/static/datum/announcement/priority/security/security_announcement_green = new(do_log = 0, do_newscast = 1, new_sound = sound('sound/misc/notice2.ogg'))
 
-/decl/security_level/default/sierradept/code_green/switching_down_to()
+/decl/security_level/default/anacondadept/code_green/switching_down_to()
 	security_announcement_green.Announce("The situation has been resolved, and all crew are to return to their regular duties.", "Attention! Alert level lowered to code green.")
 	notify_station()
 
-/decl/security_level/default/sierradept/code_violet
+/decl/security_level/default/anacondadept/code_violet
 	name = "code violet"
 
 	light_max_bright = 0.5
@@ -60,7 +60,7 @@
 	up_description = "A major medical emergency has developed. Medical personnel are required to report to their supervisor for orders, and non-medical personnel are required to obey all relevant instructions from medical staff."
 	down_description = "Code violet procedures are now in effect; Medical personnel are required to report to their supervisor for orders, and non-medical personnel are required to obey relevant instructions from medical staff."
 
-/decl/security_level/default/sierradept/code_orange
+/decl/security_level/default/anacondadept/code_orange
 	name = "code orange"
 
 	light_max_bright = 0.5
@@ -77,7 +77,7 @@
 	down_description = "Code orange procedures are now in effect; Engineering personnel are required to report to their supervisor for orders, and non-engineering personnel are required to evacuate any affected areas and obey relevant instructions from engineering staff."
 
 
-/decl/security_level/default/sierradept/code_blue
+/decl/security_level/default/anacondadept/code_blue
 	name = "code blue"
 	icon = 'icons/misc/security_state.dmi'
 
@@ -94,7 +94,7 @@
 	up_description = "A major security emergency has developed. Security personnel are to report to their supervisor for orders, are permitted to search staff and facilities, and may have weapons visible on their person."
 	down_description = "Code blue procedures are now in effect. Security personnel are to report to their supervisor for orders, are permitted to search staff and facilities, and may have weapons visible on their person."
 
-/decl/security_level/default/sierradept/code_red
+/decl/security_level/default/anacondadept/code_red
 	name = "code red"
 	icon = 'icons/misc/security_state.dmi'
 
@@ -112,16 +112,16 @@
 
 	var/static/datum/announcement/priority/security/security_announcement_red = new(do_log = 0, do_newscast = 1, new_sound = sound('sound/misc/redalert1.ogg'))
 
-/decl/security_level/default/sierradept/code_red/switching_up_to()
+/decl/security_level/default/anacondadept/code_red/switching_up_to()
 	security_announcement_red.Announce("A severe emergency has occurred. All staff are to report to their supervisor for orders. All crew should obey orders from relevant emergency personnel. Security personnel are permitted to search staff and facilities, and may have weapons unholstered at any time. Saferooms have been unbolted.", "Attention! Code red alert procedures now in effect!")
 	notify_station()
 	GLOB.using_map.unbolt_saferooms()
 
-/decl/security_level/default/sierradept/code_red/switching_down_to()
+/decl/security_level/default/anacondadept/code_red/switching_down_to()
 	security_announcement_red.Announce("The self-destruct mechanism has been deactivated. All staff are to report to their supervisor for orders. All crew should obey orders from relevant emergency personnel. Security personnel are permitted to search staff and facilities, and may have weapons unholstered at any time.", "Attention! Code red alert procedures now in effect!")
 	notify_station()
 
-/decl/security_level/default/sierradept/code_delta
+/decl/security_level/default/anacondadept/code_delta
 	name = "code delta"
 
 	light_max_bright = 0.75
@@ -135,7 +135,7 @@
 
 	var/static/datum/announcement/priority/security/security_announcement_delta = new(do_log = 0, do_newscast = 1, new_sound = sound('sound/effects/siren.ogg'))
 
-/decl/security_level/default/sierradept/code_delta/switching_up_to()
+/decl/security_level/default/anacondadept/code_delta/switching_up_to()
 	security_announcement_delta.Announce("Code Delta procedures have been engaged. All crew are instructed to obey all instructions given by heads of staff. Any violations of these orders can be punished by death. This is not a drill.", "Attention! Delta security level reached!")
 	notify_station()
 

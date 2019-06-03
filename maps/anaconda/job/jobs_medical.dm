@@ -11,9 +11,9 @@
 	selection_color = "#013d3b"
 	economic_power = 8
 	alt_titles = list(
-		"Xenosurgeon" = /decl/hierarchy/outfit/job/sierra/crew/medical/senior/xenosurgeon,
-		"Trauma Surgeon" = /decl/hierarchy/outfit/job/sierra/crew/medical/senior/traumasurgeon)
-	outfit_type = /decl/hierarchy/outfit/job/sierra/crew/medical/senior
+		"Xenosurgeon" = /decl/hierarchy/outfit/job/anaconda/crew/medical/senior/xenosurgeon,
+		"Trauma Surgeon" = /decl/hierarchy/outfit/job/anaconda/crew/medical/senior/traumasurgeon)
+	outfit_type = /decl/hierarchy/outfit/job/anaconda/crew/medical/senior
 	allowed_branches = list(/datum/mil_branch/employee, /datum/mil_branch/contractor)
 	allowed_ranks = list(/datum/mil_rank/civ/nt, /datum/mil_rank/civ/contractor)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
@@ -46,10 +46,10 @@
 	economic_power = 7
 	ideal_character_age = 40
 	alt_titles = list(
-		"Paramedic" = /decl/hierarchy/outfit/job/sierra/crew/medical/doctor/paramedic,
-		"Virologist" = /decl/hierarchy/outfit/job/sierra/crew/medical/doctor/virologist)
+		"Paramedic" = /decl/hierarchy/outfit/job/anaconda/crew/medical/doctor/paramedic,
+		"Virologist" = /decl/hierarchy/outfit/job/anaconda/crew/medical/doctor/virologist)
 
-	outfit_type = /decl/hierarchy/outfit/job/sierra/crew/medical/doctor
+	outfit_type = /decl/hierarchy/outfit/job/anaconda/crew/medical/doctor
 	allowed_branches = list(/datum/mil_branch/employee, /datum/mil_branch/contractor)
 	allowed_ranks = list(/datum/mil_rank/civ/nt, /datum/mil_rank/civ/contractor)
 	min_skill = list(   SKILL_EVA     = SKILL_BASIC,
@@ -80,9 +80,9 @@
 	economic_power = 3
 	ideal_character_age = 30
 	alt_titles = list(
-		"Orderly" = /decl/hierarchy/outfit/job/sierra/crew/medical/doctor/orderly,
-		"Nurse" = /decl/hierarchy/outfit/job/sierra/crew/medical/doctor/nurse)
-	outfit_type = /decl/hierarchy/outfit/job/sierra/crew/medical/doctor
+		"Orderly" = /decl/hierarchy/outfit/job/anaconda/crew/medical/doctor/orderly,
+		"Nurse" = /decl/hierarchy/outfit/job/anaconda/crew/medical/doctor/nurse)
+	outfit_type = /decl/hierarchy/outfit/job/anaconda/crew/medical/doctor
 	allowed_branches = list(/datum/mil_branch/employee, /datum/mil_branch/contractor)
 	allowed_ranks = list(/datum/mil_rank/civ/nt, /datum/mil_rank/civ/contractor)
 	min_skill = list(   SKILL_EVA     = SKILL_BASIC,
@@ -112,7 +112,7 @@
 	selection_color = "#013d3b"
 	economic_power = 5
 	ideal_character_age = 30
-	outfit_type = /decl/hierarchy/outfit/job/sierra/crew/medical/doctor/chemist
+	outfit_type = /decl/hierarchy/outfit/job/anaconda/crew/medical/doctor/chemist
 	allowed_branches = list(/datum/mil_branch/employee, /datum/mil_branch/contractor)
 	allowed_ranks = list(/datum/mil_rank/civ/nt, /datum/mil_rank/civ/contractor)
 	min_skill = list(   SKILL_MEDICAL   = SKILL_BASIC,
@@ -137,10 +137,10 @@
 	economic_power = 5
 	supervisors = "the Chief Medical Officer"
 	alt_titles = list(
-		"Psychiatrist" = /decl/hierarchy/outfit/job/sierra/crew/medical/counselor/psychiatrist,
-		"Chaplain" = /decl/hierarchy/outfit/job/sierra/crew/medical/counselor/chaplain,
+		"Psychiatrist" = /decl/hierarchy/outfit/job/anaconda/crew/medical/counselor/psychiatrist,
+		"Chaplain" = /decl/hierarchy/outfit/job/anaconda/crew/medical/counselor/chaplain,
 	)
-	outfit_type = /decl/hierarchy/outfit/job/sierra/crew/medical/counselor
+	outfit_type = /decl/hierarchy/outfit/job/anaconda/crew/medical/counselor
 	allowed_branches = list(/datum/mil_branch/employee, /datum/mil_branch/civilian, /datum/mil_branch/contractor)
 	allowed_ranks = list(/datum/mil_rank/civ/nt, /datum/mil_rank/civ/contractor, /datum/mil_rank/civ/civ)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,

@@ -11,7 +11,7 @@
 	minimal_player_age = 14
 	ideal_character_age = 34
 
-	outfit_type = /decl/hierarchy/outfit/job/sierra/crew/engineering/senior_engineer
+	outfit_type = /decl/hierarchy/outfit/job/anaconda/crew/engineering/senior_engineer
 	allowed_branches = list(/datum/mil_branch/employee)
 	allowed_ranks = list(/datum/mil_rank/civ/nt)
 
@@ -56,13 +56,13 @@
 	economic_power = 6
 
 	alt_titles = list(
-		"Maintenance Technician" = /decl/hierarchy/outfit/job/sierra/crew/engineering/engineer/maints,
-		"Structural Integrity Specialist" = /decl/hierarchy/outfit/job/sierra/crew/engineering/engineer/maints,
+		"Maintenance Technician" = /decl/hierarchy/outfit/job/anaconda/crew/engineering/engineer/maints,
+		"Structural Integrity Specialist" = /decl/hierarchy/outfit/job/anaconda/crew/engineering/engineer/maints,
 		"Electrician",
-		"Reactor Technician" = /decl/hierarchy/outfit/job/sierra/crew/engineering/engineer/maints,,
-		"Atmospheric Technician" = /decl/hierarchy/outfit/job/sierra/crew/engineering/engineer/atmos)
+		"Reactor Technician" = /decl/hierarchy/outfit/job/anaconda/crew/engineering/engineer/maints,,
+		"Atmospheric Technician" = /decl/hierarchy/outfit/job/anaconda/crew/engineering/engineer/atmos)
 
-	outfit_type = /decl/hierarchy/outfit/job/sierra/crew/engineering/engineer
+	outfit_type = /decl/hierarchy/outfit/job/anaconda/crew/engineering/engineer
 	allowed_branches = list(/datum/mil_branch/employee, /datum/mil_branch/contractor)
 	allowed_ranks = list(/datum/mil_rank/civ/nt, /datum/mil_rank/civ/contractor)
 
@@ -106,7 +106,7 @@
 	ideal_character_age = 20
 	economic_power = 3
 
-	outfit_type = /decl/hierarchy/outfit/job/sierra/crew/engineering/engineer/maints
+	outfit_type = /decl/hierarchy/outfit/job/anaconda/crew/engineering/engineer/maints
 	allowed_branches = list(/datum/mil_branch/employee, /datum/mil_branch/contractor)
 	allowed_ranks = list(/datum/mil_rank/civ/nt, /datum/mil_rank/civ/contractor)
 
@@ -150,7 +150,7 @@
 	ideal_character_age = 24
 	economic_power = 6
 
-	outfit_type = /decl/hierarchy/outfit/job/sierra/crew/engineering/engineer/tcomms
+	outfit_type = /decl/hierarchy/outfit/job/anaconda/crew/engineering/engineer/tcomms
 	allowed_branches = list(/datum/mil_branch/employee, /datum/mil_branch/contractor)
 	allowed_ranks = list(/datum/mil_rank/civ/nt, /datum/mil_rank/civ/contractor)
 

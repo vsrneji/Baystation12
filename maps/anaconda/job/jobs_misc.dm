@@ -9,7 +9,7 @@
 	economic_power = 6
 	announced = FALSE
 	alt_titles = list(
-		"Journalist" = /decl/hierarchy/outfit/job/sierra/passenger/passenger/journalist,
+		"Journalist" = /decl/hierarchy/outfit/job/anaconda/passenger/passenger/journalist,
 		"Historian",
 		"Botanist",
 		"Naturalist",
@@ -20,7 +20,7 @@
 		"Trainer",
 		"Assistant"
 		)
-	outfit_type = /decl/hierarchy/outfit/job/sierra/passenger/passenger
+	outfit_type = /decl/hierarchy/outfit/job/anaconda/passenger/passenger
 	allowed_branches = list(/datum/mil_branch/employee, /datum/mil_branch/contractor, /datum/mil_branch/civilian)
 	allowed_ranks = list(
 		/datum/mil_rank/civ/civ,
@@ -45,7 +45,7 @@
 	ideal_character_age = 30
 	minimal_player_age = 7
 	create_record = 0
-	outfit_type = /decl/hierarchy/outfit/job/sierra/merchant/leader
+	outfit_type = /decl/hierarchy/outfit/job/anaconda/merchant/leader
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(/datum/mil_rank/civ/civ)
 	latejoin_at_spawnpoints = 1
@@ -72,8 +72,8 @@
 	create_record = 0
 	alt_titles = list(
 		"Merchant Assistant",
-		"Merchant Security" = /decl/hierarchy/outfit/job/sierra/merchant/security)
-	outfit_type = /decl/hierarchy/outfit/job/sierra/merchant
+		"Merchant Security" = /decl/hierarchy/outfit/job/anaconda/merchant/security)
+	outfit_type = /decl/hierarchy/outfit/job/anaconda/merchant
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(/datum/mil_rank/civ/civ)
 	latejoin_at_spawnpoints = 1
@@ -100,7 +100,7 @@
 	minimal_player_age = 7
 	create_record = 0
 	account_allowed = 0
-	outfit_type = /decl/hierarchy/outfit/job/sierra/stowaway
+	outfit_type = /decl/hierarchy/outfit/job/anaconda/stowaway
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(/datum/mil_rank/civ/civ)
 	latejoin_at_spawnpoints = 1

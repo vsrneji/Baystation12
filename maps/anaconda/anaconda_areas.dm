@@ -223,7 +223,7 @@
 	name = "Transport Shuttle Centcom"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
 
-//sierra large pods
+//anaconda large pods
 /area/shuttle/escape_pod6/station
 	name = "Escape Pod One"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
@@ -244,7 +244,7 @@
 	name = "Escape Pod Five"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
 
-//sierra small pods
+//anaconda small pods
 /area/shuttle/escape_pod12/station
 	name = "Escape Pod Seven"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
@@ -343,19 +343,19 @@
 	base_turf = /turf/unsimulated/floor/rescue_base
 
 // Elevator areas.
-/area/turbolift/sierra_top
+/area/turbolift/anaconda_top
 	name = "lift (first deck)"
 	lift_floor_label = "Deck 1"
 	lift_floor_name = "Main Deck"
 	lift_announce_str = "Arriving at Main Deck: Bridge. Captain's Mess. Meeting Room. Security Wing. Research Wing. Infirmary. AI Core."
 
-/area/turbolift/sierra_middle
+/area/turbolift/anaconda_middle
 	name = "lift (second deck)"
 	lift_floor_label = "Deck 2"
 	lift_floor_name = "Living Deck"
 	lift_announce_str = "Arriving at Living Deck: Cryogenic Storage. Dormitory. Holodeck. Lounge. Bar. Hydroponics. Gym. Laundry. Engineering. Atmospherics. Telecommunications. EVA."
 
-/area/turbolift/sierra_ground
+/area/turbolift/anaconda_ground
 	name = "lift (third deck)"
 	lift_floor_label = "Deck 3"
 	lift_floor_name = "Hangar Deck"
@@ -697,69 +697,69 @@
 
 // Security
 
-/area/security/sierra/hallway
+/area/security/anaconda/hallway
 	name = "Security - Fore Hallway"
 	icon_state = "security"
 	sound_env = LARGE_ENCLOSED
 
-/area/security/sierra/hallway/aft
+/area/security/anaconda/hallway/aft
 	name = "Security - Aft Hallway"
 	icon_state = "security"
 
-/area/security/sierra/hallway/port
+/area/security/anaconda/hallway/port
 	name = "Security - Port Hallway"
 	icon_state = "security"
 
-/area/security/sierra/sergeant
+/area/security/anaconda/sergeant
 	name = "Security - Warden"
 	icon_state = "brig"
 
-/area/security/sierra/armory
+/area/security/anaconda/armory
 	name = "Security - Armory"
 	icon_state = "armory"
 
-/area/security/sierra/armory/lobby
+/area/security/anaconda/armory/lobby
 	name = "Security - Armory - Lobby"
 	icon_state = "armory"
 
-/area/security/sierra/safe_room
+/area/security/anaconda/safe_room
 	name = "Security - Safe Room"
 	icon_state = "security"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
 
-/area/security/sierra/suits
+/area/security/anaconda/suits
 	name = "Security - Suits Storage"
 	icon_state = "security"
 
-/area/security/sierra/breakroom
+/area/security/anaconda/breakroom
 	name = "Security - Break Room"
 	icon_state = "security"
 
-/area/security/sierra/hos
+/area/security/anaconda/hos
 	name = "Security - Head Of Security"
 	icon_state = "sec_hos"
 
-/area/security/sierra/hos/bedroom
+/area/security/anaconda/hos/bedroom
 	name = "Security - HOS - Bedroom"
 	icon_state = "sec_hos"
 
-/area/security/sierra/forensic
+/area/security/anaconda/forensic
 	name = "Security - Forensic"
 	icon_state = "detective"
 
-/area/security/sierra/forensic/lab
+/area/security/anaconda/forensic/lab
 	name = "Security - Forensic - Laboratory"
 	icon_state = "detective"
 
-/area/security/sierra/equipment
+/area/security/anaconda/equipment
 	name = "Security - Equipment storage"
 	icon_state = "security"
 
-/area/security/sierra/interrogation
+/area/security/anaconda/interrogation
 	name = "Security - Interrogation"
 	icon_state = "detective"
 
-/area/security/sierra/evidence
+/area/security/anaconda/evidence
 	name = "Security - Evidence Storage"
 	icon_state = "detective"
 
@@ -771,7 +771,7 @@
 	name = "Vault"
 	icon_state = "nuke_storage"
 
-/area/security/sierra/dockcheck
+/area/security/anaconda/dockcheck
 	name = "Security - Fore Docks Checkpoint"
 	icon_state = "checkpoint1"
 

@@ -1,8 +1,8 @@
 /*
- * Sierra Supply
+ * anaconda Supply
  */
 
-/decl/closet_appearance/secure_closet/sierra/prospector
+/decl/closet_appearance/secure_closet/anaconda/prospector
 	color = COLOR_WARM_YELLOW
 	decals = list(
 		"upper_side_vent",
@@ -14,14 +14,14 @@
 		"mining" = COLOR_BEASTY_BROWN
 	)
 
-/decl/closet_appearance/secure_closet/sierra/cargo/decktech
+/decl/closet_appearance/secure_closet/anaconda/cargo/decktech
 	extra_decals = list(
 		"stripe_vertical_left_full" = COLOR_BEASTY_BROWN,
 		"stripe_vertical_right_full" = COLOR_BEASTY_BROWN,
 		"cargo_upper" = COLOR_BEASTY_BROWN
 	)
 
-/decl/closet_appearance/secure_closet/sierra/cargo/quartmaster
+/decl/closet_appearance/secure_closet/anaconda/cargo/quartmaster
 	extra_decals = list(
 		"stripe_vertical_mid_full" = COLOR_GOLD,
 		"stripe_vertical_left_full" = COLOR_BEASTY_BROWN,
@@ -32,7 +32,7 @@
 /obj/structure/closet/secure_closet/decktech
 	name = "cargo technician's locker"
 	req_access = list(access_cargo)
-	closet_appearance = /decl/closet_appearance/secure_closet/sierra/cargo/decktech
+	closet_appearance = /decl/closet_appearance/secure_closet/anaconda/cargo/decktech
 
 /obj/structure/closet/secure_closet/decktech/WillContain()
 	return list(
@@ -52,15 +52,15 @@
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/messenger = 75, /obj/item/weapon/storage/backpack/dufflebag = 25))
 	)
 
-/obj/structure/closet/secure_closet/quartermaster_sierra
+/obj/structure/closet/secure_closet/quartermaster_anaconda
 	name = "quartermaster's locker"
 	req_access = list(access_qm)
-	closet_appearance = /decl/closet_appearance/secure_closet/sierra/cargo/quartmaster
+	closet_appearance = /decl/closet_appearance/secure_closet/anaconda/cargo/quartmaster
 
-/obj/structure/closet/secure_closet/quartermaster_sierra/WillContain()
+/obj/structure/closet/secure_closet/quartermaster_anaconda/WillContain()
 	return list(
-		/obj/item/device/radio/headset/sierra_quartermaster,
-		/obj/item/device/radio/headset/sierra_quartermaster/alt,
+		/obj/item/device/radio/headset/anaconda_quartermaster,
+		/obj/item/device/radio/headset/anaconda_quartermaster/alt,
 		/obj/item/clothing/gloves/thick,
 		/obj/item/clothing/glasses/meson,
 		/obj/item/clothing/glasses/sunglasses,
@@ -83,7 +83,7 @@
 /obj/structure/closet/secure_closet/prospector
 	name = "prospector's locker"
 	req_access = list(access_mining)
-	closet_appearance = /decl/closet_appearance/secure_closet/sierra/prospector
+	closet_appearance = /decl/closet_appearance/secure_closet/anaconda/prospector
 
 /obj/structure/closet/secure_closet/prospector/WillContain()
 	return list(

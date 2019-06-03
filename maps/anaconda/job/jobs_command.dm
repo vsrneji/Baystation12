@@ -7,7 +7,7 @@
 	minimal_player_age = 21
 	economic_power = 20
 	ideal_character_age = 50
-	outfit_type = /decl/hierarchy/outfit/job/sierra/crew/command/captain
+	outfit_type = /decl/hierarchy/outfit/job/anaconda/crew/command/captain
 	total_positions = 1
 	spawn_positions = 1
 	req_admin_notify = 1
@@ -37,7 +37,7 @@
 	minimal_player_age = 18
 	economic_power = 7
 	ideal_character_age = 24
-	outfit_type = /decl/hierarchy/outfit/job/sierra/crew/command/adjutant
+	outfit_type = /decl/hierarchy/outfit/job/anaconda/crew/command/adjutant
 	allowed_branches = list(/datum/mil_branch/employee)
 	allowed_ranks = list(/datum/mil_rank/civ/nt)
 	min_skill = list(	SKILL_BUREAUCRACY = SKILL_BASIC,
@@ -66,4 +66,4 @@
 							 /datum/computer_file/program/deck_management)
 
 /datum/job/adjutant/get_description_blurb()
-	return "You are an Adjutant. You do not give orders of your own. You are subordinate to all of command. You handle matters on the bridge and report directly to the Captain and Head of Personnel. You take the sierra's helm. You monitor bridge computer programs and communications and report relevant information to command. Sometimes you can also give support for vessel's departments - you have radio keys in bridge's storage for that purpose."
+	return "You are an Adjutant. You do not give orders of your own. You are subordinate to all of command. You handle matters on the bridge and report directly to the Captain and Head of Personnel. You take the anaconda's helm. You monitor bridge computer programs and communications and report relevant information to command. Sometimes you can also give support for vessel's departments - you have radio keys in bridge's storage for that purpose."

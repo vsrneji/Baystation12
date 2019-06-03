@@ -1,4 +1,4 @@
-/datum/map/sierra
+/datum/map/anaconda
 	species_to_job_whitelist = list(
 		/datum/species/adherent = list(/datum/job/ai, /datum/job/cyborg, /datum/job/assistant, /datum/job/janitor, /datum/job/chef, /datum/job/cargo_assistant,
 										/datum/job/doctor_trainee, /datum/job/engineer_trainee, /datum/job/scientist_assistant),
@@ -41,7 +41,7 @@
 	)
 
 /*
-/datum/map/sierra/setup_map()
+/datum/map/anaconda/setup_map()
 	..()
 	for(var/job_type in GLOB.using_map.allowed_jobs)
 		var/datum/job/job = decls_repository.get_decl(job_type)
@@ -80,5 +80,5 @@
 		/datum/mil_rank/civ/civ
 	)
 
-/datum/map/sierra
+/datum/map/anaconda
 	default_assistant_title = "Passenger"

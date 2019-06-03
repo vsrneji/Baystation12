@@ -45,7 +45,7 @@
 
 /obj/item/weapon/book/manual/sol_sop
 	name = "Standard Operating Procedures"
-	desc = "SOP aboard the NES Sierra."
+	desc = "SOP aboard the NES anaconda."
 	icon_state = "booksolregs"
 	author = "The Sol Central Government"
 	title = "Standard Operating Procedure"
@@ -67,7 +67,7 @@
 
 /obj/item/weapon/book/manual/nt_sop
 	name = "NT Standard Operating Procedures"
-	desc = "SOP aboard the NSV Sierra."
+	desc = "SOP aboard the NSV anaconda."
 	icon = 'icons/obj/library_inf.dmi'
 	icon_state = "bookNTsop"
 	author = "Employee Materials"
@@ -90,7 +90,7 @@
 
 /obj/item/weapon/book/manual/nt_tc
 	name = "NT Threat Codes"
-	desc = "TC aboard the NSV Sierra."
+	desc = "TC aboard the NSV anaconda."
 	icon = 'icons/obj/library_inf.dmi'
 	icon_state = "bookNTtc"
 	author = "Ship Rule Materials"
@@ -127,9 +127,9 @@
 	<h3>NANOTRASEN RESEARCH DIVISION</h3>
 	<img src = ntlogo.png>
 	</center>
-	<b>FROM:</b> Hieronimus Blackstone, Overseer of sierra Cooperation Project<br>
-	<b>TO:</b> Research Director of NES Sierra branch<br>
-	<b>CC:</b> Liason with SCG services aboard NES Sierra<br>
+	<b>FROM:</b> Hieronimus Blackstone, Overseer of anaconda Cooperation Project<br>
+	<b>TO:</b> Research Director of NES anaconda branch<br>
+	<b>CC:</b> Liason with SCG services aboard NES anaconda<br>
 	<b>SUBJECT:</b> RE: Testing Materials<br>
 	<hr>
 	We have reviewed your request, and would like to make an addition to the list of needed materials.<br>
@@ -148,18 +148,18 @@
 	"}
 
 /obj/item/weapon/folder/envelope/captain
-	desc = "A thick envelope. The NT logo is stamped in the corner, along with 'TOP SECRET - SIERRA UMBRA'."
+	desc = "A thick envelope. The NT logo is stamped in the corner, along with 'TOP SECRET - anaconda UMBRA'."
 
 /obj/item/weapon/folder/envelope/captain/Initialize()
 	. = ..()
-	var/obj/effect/overmap/sierra = map_sectors["[z]"]
+	var/obj/effect/overmap/anaconda = map_sectors["[z]"]
 	var/memo = {"
 	<tt><center><b><font color='red'>СЕКРЕТНО - КОДОВОЕ СЛОВО: СЬЕРРА</font></b>
 	<h3>ЦЕНТРАЛЬНОЕ КОМАНДОВАНИЕ</h3>
 	<img src = ntlogo.png>
 	</center>
 	<b>ОТ:</b> Swadian Barwuds<br>
-	<b>КОМУ:</b> Капитану NSV Sierra<br>
+	<b>КОМУ:</b> Капитану NSV anaconda<br>
 	<b>ТЕМА:</b> Общий приказ<br>
 	<hr>
 	Капитан,<br>
@@ -178,7 +178,7 @@
 	Ни одна из этих систем не &#255;вл&#255;етс&#255; опознанной официальными организаци&#255;ми, по этому у вас имеетс&#255; полное право на исследование и демонтаж всех заброшенных объектов по пути.<br>
 	В случае обнаружени&#255; мира с богатыми минеральными залежами, форонового гиганта или просто удобного дл&#255; колонизации, составьте отчет и оставьте на планете ма&#255;чок дальней св&#255;зи.<br>
 	Ни одно из государств не действует на этих территори&#255;х на официальном уровне. В случае обнаружени&#255; сигнала бедстви&#255; без наличи&#255; суден ТКК или ПСС в секторе, не игнорируйте их. Спасенный персонал представл&#255;ет исключительную дипломатическую ценность.<br>
-	Текущий код стыковки: [sierra.docking_codes]<br>
+	Текущий код стыковки: [anaconda.docking_codes]<br>
 	Сообщайте о всех незарегистрированных или исключительных находках при перемещении в системах.<br>
 
 	<i>Swadian Barwuds</i></tt><br>
@@ -189,7 +189,7 @@
 	new/obj/item/weapon/paper/umbra(src)
 
 /obj/item/weapon/folder/envelope/rep
-	desc = "A thick envelope. The NT logo is stamped in the corner, along with 'TOP SECRET - SIERRA UMBRA'."
+	desc = "A thick envelope. The NT logo is stamped in the corner, along with 'TOP SECRET - anaconda UMBRA'."
 
 /obj/item/weapon/folder/envelope/rep/Initialize()
 	. = ..()
@@ -197,7 +197,7 @@
 
 /obj/item/weapon/paper/umbra
 	name = "UMBRA Protocol"
-	icon = 'maps/sierra/icons/obj/uniques.dmi'
+	icon = 'maps/anaconda/icons/obj/uniques.dmi'
 	icon_state = "paper_words"
 	info = {"
 	<tt><center><b><font color='red'>СОВЕРШЕННО СЕКРЕТНО - КОДОВОЕ СЛОВО: ТЕНЬ СЬЕРРЫ</font></b>
@@ -205,8 +205,8 @@
 	<img src = ntlogo.png>
 	</center>
 	<b>ОТ:</b> Kim Taggert, операционный директор НТ<br>
-	<b>КОМУ:</b> Капитану NSV Sierra<br>
-	<b>А ТАКЖЕ:</b> Агенту Внутренних Дел NSV Sierra<br>
+	<b>КОМУ:</b> Капитану NSV anaconda<br>
+	<b>А ТАКЖЕ:</b> Агенту Внутренних Дел NSV anaconda<br>
 	<b>ТЕМА:</b> Протокол ТЕНЬ<br>
 	<hr>
 	<li>Это - небольшое дополнение к стандартным процедурам. В отлчии от остальных СОП, данна&#255; процедура не должна оглашатьс&#255; персоналу судна. Данный протокол необходим дл&#255; избежани&#255; непри&#255;тных казусов после миссии.</li>

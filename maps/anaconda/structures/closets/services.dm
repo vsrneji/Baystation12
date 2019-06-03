@@ -1,20 +1,20 @@
 /*
- * Sierra Service
+ * anaconda Service
  */
 
-/decl/closet_appearance/secure_closet/sierra/hydroponics
+/decl/closet_appearance/secure_closet/anaconda/hydroponics
 	extra_decals = list(
 		"stripe_vertical_right_partial" = COLOR_GREEN_GRAY,
 		"stripe_vertical_mid_partial" =   COLOR_GREEN_GRAY,
 		"hydro" = COLOR_GREEN_GRAY
 	)
 
-/obj/structure/closet/chefcloset_sierra
+/obj/structure/closet/chefcloset_anaconda
 	name = "chef's closet"
 	desc = "It's a storage unit for foodservice equipment."
 	closet_appearance = /decl/closet_appearance/wardrobe/black
 
-/obj/structure/closet/chefcloset_sierra/WillContain()
+/obj/structure/closet/chefcloset_anaconda/WillContain()
 	return list(
 		/obj/item/clothing/head/soft/mime,
 		/obj/item/device/radio/headset/headset_service,
@@ -26,12 +26,12 @@
 		/obj/item/clothing/suit/chef/classic
 	)
 
-/obj/structure/closet/secure_closet/hydroponics_sierra //done so that it has no access reqs
+/obj/structure/closet/secure_closet/hydroponics_anaconda //done so that it has no access reqs
 	name = "hydroponics locker"
 	req_access = list()
-	closet_appearance = /decl/closet_appearance/secure_closet/sierra/hydroponics
+	closet_appearance = /decl/closet_appearance/secure_closet/anaconda/hydroponics
 
-/obj/structure/closet/secure_closet/hydroponics_sierra/WillContain()
+/obj/structure/closet/secure_closet/hydroponics_anaconda/WillContain()
 	return list(
 		/obj/item/clothing/head/soft/green,
 		/obj/item/weapon/storage/plants,
@@ -46,12 +46,12 @@
 		new /datum/atom_creator/simple(/obj/item/weapon/storage/backpack/messenger/hyd, 50)
 	)
 
-/obj/structure/closet/jcloset/sierra
+/obj/structure/closet/jcloset/anaconda
 	name = "custodial closet"
 	desc = "It's a storage unit for janitorial equipment."
 	closet_appearance = /decl/closet_appearance/wardrobe/mixed
 
-/obj/structure/closet/jcloset/sierra/WillContain()
+/obj/structure/closet/jcloset/anaconda/WillContain()
 	return list(
 		/obj/item/clothing/head/beret/purple,
 		/obj/item/clothing/head/soft/purple,
@@ -75,13 +75,13 @@
 		/obj/item/weapon/soap/nanotrasen
 	)
 
-/obj/structure/closet/secure_closet/bar_sierra
+/obj/structure/closet/secure_closet/bar_anaconda
 	name = "bar locker"
 	desc = "It's a storage unit for bar equipment."
 	req_access = list(access_bar)
 	closet_appearance = /decl/closet_appearance/cabinet/secure
 
-/obj/structure/closet/secure_closet/bar_sierra/WillContain()
+/obj/structure/closet/secure_closet/bar_anaconda/WillContain()
 	return list(
 		/obj/item/clothing/head/soft/black,
 		/obj/item/device/radio/headset/headset_service,

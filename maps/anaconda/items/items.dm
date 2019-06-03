@@ -1,5 +1,5 @@
 /*******************
-sierra specific items
+anaconda specific items
 *******************/
 
 /obj/item/weapon/storage/backpack/explorer
@@ -23,13 +23,13 @@ Unique items
 
 /obj/item/weapon/pen/multi/cmd/hop
 	name = "head of personnel's pen"
-	icon = 'maps/sierra/icons/obj/uniques.dmi'
+	icon = 'maps/anaconda/icons/obj/uniques.dmi'
 	icon_state = "pen_xo"
 	desc = "A slightly bulky pen with a silvery case. Twisting the top allows you to switch the nib for different colors."
 
 /obj/item/weapon/pen/multi/cmd/captain
 	name = "captain's pen"
-	icon = 'maps/sierra/icons/obj/uniques.dmi'
+	icon = 'maps/anaconda/icons/obj/uniques.dmi'
 	icon_state = "pen_co"
 	desc = "A slightly bulky pen with a golden case. Twisting the top allows you to switch the nib for different colors."
 
@@ -60,7 +60,7 @@ Weapons
 ******/
 
 /obj/item/weapon/gun/projectile/revolver/medium/captain
-	desc = "A shiny al-Maliki & Mosley Autococker automatic revolver, with black accents. Marketed as the 'Revolver for the Modern Era'. Uses .357 magnum rounds. This one has 'To the Captain of NSV Sierra' engraved."
+	desc = "A shiny al-Maliki & Mosley Autococker automatic revolver, with black accents. Marketed as the 'Revolver for the Modern Era'. Uses .357 magnum rounds. This one has 'To the Captain of NSV anaconda' engraved."
 
 /obj/item/weapon/gun/energy/stunrevolver/secure/nanotrasen
 	name = "corporate stun revolver"

@@ -1,15 +1,15 @@
 /*
- * Sierra Science
+ * anaconda Science
  */
 
-/decl/closet_appearance/secure_closet/sierra/science
+/decl/closet_appearance/secure_closet/anaconda/science
 	extra_decals = list(
 		"stripe_vertical_left_full" =  COLOR_PURPLE_GRAY,
 		"stripe_vertical_right_full" = COLOR_PURPLE_GRAY,
 		"research" = COLOR_PURPLE_GRAY
 	)
 
-/decl/closet_appearance/secure_closet/sierra/science/rd
+/decl/closet_appearance/secure_closet/anaconda/science/rd
 	extra_decals = list(
 		"stripe_vertical_left_full" =  COLOR_PURPLE_GRAY,
 		"stripe_vertical_mid_full" =   COLOR_GOLD,
@@ -17,12 +17,12 @@
 		"research" = COLOR_GOLD
 	)
 
-/obj/structure/closet/secure_closet/RD_sierra
+/obj/structure/closet/secure_closet/RD_anaconda
 	name = "research director's locker"
 	req_access = list(access_rd)
-	closet_appearance = /decl/closet_appearance/secure_closet/sierra/science/rd
+	closet_appearance = /decl/closet_appearance/secure_closet/anaconda/science/rd
 
-/obj/structure/closet/secure_closet/RD_sierra/WillContain()
+/obj/structure/closet/secure_closet/RD_anaconda/WillContain()
 	return list(
 		/obj/item/clothing/suit/bio_suit/scientist,
 		/obj/item/clothing/head/bio_hood/scientist,
@@ -55,12 +55,12 @@
 		new /datum/atom_creator/simple(/obj/item/weapon/storage/backpack/messenger/tox, 50)
 	)
 
-/obj/structure/closet/secure_closet/xenoarchaeologist_sierra
+/obj/structure/closet/secure_closet/xenoarchaeologist_anaconda
 	name = "xenoarchaeologist's locker"
 	req_access = list(access_xenoarch)
-	closet_appearance = /decl/closet_appearance/secure_closet/sierra/science
+	closet_appearance = /decl/closet_appearance/secure_closet/anaconda/science
 
-/obj/structure/closet/secure_closet/xenoarchaeologist_sierra/WillContain()
+/obj/structure/closet/secure_closet/xenoarchaeologist_anaconda/WillContain()
 	return list(
 		/obj/item/clothing/under/rank/scientist/nanotrasen,
 		/obj/item/clothing/suit/storage/toggle/labcoat/science/nanotrasen,
@@ -84,12 +84,12 @@
 		new /datum/atom_creator/simple(/obj/item/weapon/storage/backpack/dufflebag, 50)
 	)
 
-/obj/structure/closet/secure_closet/scientist_sierra
+/obj/structure/closet/secure_closet/scientist_anaconda
 	name = "researcher's locker"
 	req_access = list(access_research)
-	closet_appearance = /decl/closet_appearance/secure_closet/sierra/science
+	closet_appearance = /decl/closet_appearance/secure_closet/anaconda/science
 
-/obj/structure/closet/secure_closet/scientist_sierra/WillContain()
+/obj/structure/closet/secure_closet/scientist_anaconda/WillContain()
 	return list(
 		/obj/item/clothing/under/rank/scientist/nanotrasen,
 		/obj/item/clothing/suit/storage/toggle/labcoat/science/nanotrasen,

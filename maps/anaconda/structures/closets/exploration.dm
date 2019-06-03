@@ -1,5 +1,5 @@
 /*
- * Sierra Exploration
+ * anaconda Exploration
  */
 
 /decl/closet_appearance/secure_closet/sirra/exploration

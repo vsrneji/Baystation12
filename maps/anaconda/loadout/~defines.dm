@@ -1,4 +1,4 @@
-//The following is the list of undefs for the Sierra loadout.
+//The following is the list of undefs for the anaconda loadout.
 
 #undef EXPLORATION_ROLES
 

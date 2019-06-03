@@ -9,7 +9,7 @@
 	ideal_character_age = 20
 	alt_titles = list(
 		"Sanitation Technician")
-	outfit_type = /decl/hierarchy/outfit/job/sierra/crew/service/janitor
+	outfit_type = /decl/hierarchy/outfit/job/anaconda/crew/service/janitor
 	allowed_branches = list(/datum/mil_branch/employee, /datum/mil_branch/civilian, /datum/mil_branch/contractor)
 	allowed_ranks = list(/datum/mil_rank/civ/nt, /datum/mil_rank/civ/contractor, /datum/mil_rank/civ/civ)
 	min_skill = list(	SKILL_HAULING = SKILL_BASIC)
@@ -29,7 +29,7 @@
 		"Cook",
 		"Culinary Specialist"
 		)
-	outfit_type = /decl/hierarchy/outfit/job/sierra/crew/service/cook
+	outfit_type = /decl/hierarchy/outfit/job/anaconda/crew/service/cook
 	allowed_branches = list(/datum/mil_branch/employee, /datum/mil_branch/civilian, /datum/mil_branch/contractor)
 	allowed_ranks = list(/datum/mil_rank/civ/nt, /datum/mil_rank/civ/contractor, /datum/mil_rank/civ/civ)
 	min_skill = list(	SKILL_COOKING   = SKILL_ADEPT,
@@ -46,7 +46,7 @@
 	supervisors = "the Head of Personnel"
 	ideal_character_age = 30
 	selection_color = "#515151"
-	outfit_type = /decl/hierarchy/outfit/job/sierra/crew/service/bartender
+	outfit_type = /decl/hierarchy/outfit/job/anaconda/crew/service/bartender
 	allowed_branches = list(/datum/mil_branch/employee, /datum/mil_branch/civilian, /datum/mil_branch/contractor)
 	allowed_ranks = list(/datum/mil_rank/civ/nt, /datum/mil_rank/civ/contractor, /datum/mil_rank/civ/civ)
 

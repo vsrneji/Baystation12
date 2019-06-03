@@ -12,7 +12,7 @@
 	ideal_character_age = 50
 	alt_titles = list(
 		"Research Supervisor")
-	outfit_type = /decl/hierarchy/outfit/job/sierra/crew/research/senior_scientist
+	outfit_type = /decl/hierarchy/outfit/job/anaconda/crew/research/senior_scientist
 	allowed_branches = list(/datum/mil_branch/employee)
 	allowed_ranks = list(/datum/mil_rank/civ/nt)
 
@@ -50,7 +50,7 @@
 		"Researcher",
 		"Xenobiologist",
 		"Xenobotanist",
-		"Psychologist" = /decl/hierarchy/outfit/job/sierra/crew/research/scientist/psych)
+		"Psychologist" = /decl/hierarchy/outfit/job/anaconda/crew/research/scientist/psych)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_COMPUTER    = SKILL_BASIC,
 	                    SKILL_DEVICES     = SKILL_BASIC,
@@ -60,7 +60,7 @@
 	                    SKILL_SCIENCE     = SKILL_MAX,
 	                    SKILL_CHEMISTRY   = SKILL_MAX)
 
-	outfit_type = /decl/hierarchy/outfit/job/sierra/crew/research/scientist
+	outfit_type = /decl/hierarchy/outfit/job/anaconda/crew/research/scientist
 	allowed_branches = list(/datum/mil_branch/employee, /datum/mil_branch/contractor)
 	allowed_ranks = list(/datum/mil_rank/civ/nt, /datum/mil_rank/civ/contractor)
 
@@ -84,7 +84,7 @@
 	alt_titles = list(
 		"Biomechanical Engineer",
 		"Mechsuit Technician")
-	outfit_type = /decl/hierarchy/outfit/job/sierra/crew/research/roboticist
+	outfit_type = /decl/hierarchy/outfit/job/anaconda/crew/research/roboticist
 	allowed_branches = list(/datum/mil_branch/employee, /datum/mil_branch/contractor)
 	allowed_ranks = list(/datum/mil_rank/civ/nt, /datum/mil_rank/civ/contractor)
 	min_skill = list(   SKILL_COMPUTER		= SKILL_ADEPT,
@@ -113,7 +113,7 @@
 	economic_power = 3
 	ideal_character_age = 30
 	alt_titles = list(
-		"Testing Assistant" = /decl/hierarchy/outfit/job/sierra/crew/research/assist/testsubject,
+		"Testing Assistant" = /decl/hierarchy/outfit/job/anaconda/crew/research/assist/testsubject,
 		"Laboratory Technician",
 		"Science Intern",
 		"Clerk",
@@ -124,7 +124,7 @@
 	                    SKILL_CHEMISTRY   = SKILL_MAX)
 
 
-	outfit_type = /decl/hierarchy/outfit/job/sierra/crew/research/assist
+	outfit_type = /decl/hierarchy/outfit/job/anaconda/crew/research/assist
 	allowed_branches = list(/datum/mil_branch/employee, /datum/mil_branch/contractor)
 	allowed_ranks = list(/datum/mil_rank/civ/nt, /datum/mil_rank/civ/contractor)
 

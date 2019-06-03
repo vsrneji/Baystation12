@@ -1,8 +1,8 @@
 /*
- * Sierra Excavation
+ * anaconda Excavation
  */
 
-/decl/closet_appearance/secure_closet/sierra/excavation
+/decl/closet_appearance/secure_closet/anaconda/excavation
 	extra_decals = list(
 		"stripe_vertical_left_full" =  COLOR_PURPLE_GRAY,
 		"stripe_vertical_right_full" = COLOR_PURPLE_GRAY,
@@ -12,7 +12,7 @@
 /obj/structure/closet/toolcloset/excavation
 	name = "excavation equipment closet"
 	desc = "It's a storage unit for excavation equipment."
-	closet_appearance = /decl/closet_appearance/secure_closet/sierra/excavation
+	closet_appearance = /decl/closet_appearance/secure_closet/anaconda/excavation
 
 /obj/structure/closet/toolcloset/excavation/WillContain()
 	return list(
@@ -46,17 +46,17 @@
 		/obj/item/clothing/shoes/white = 2,
 		/obj/item/clothing/shoes/black = 2)
 
-/obj/random/sierracloset //Random closets taking into account sierra-specific ones
+/obj/random/anacondacloset //Random closets taking into account anaconda-specific ones
 	name = "random closet"
 	desc = "This is a random closet."
 	icon = 'icons/obj/closets/bases/closet.dmi'
 	icon_state = "base"
 
-/obj/random/sierracloset/spawn_choices()
+/obj/random/anacondacloset/spawn_choices()
 	return list(/obj/structure/closet,
 				/obj/structure/closet/firecloset,
 				/obj/structure/closet/emcloset,
-				/obj/structure/closet/jcloset/sierra,
+				/obj/structure/closet/jcloset/anaconda,
 				/obj/structure/closet/athletic_mixed,
 				/obj/structure/closet/toolcloset,
 				/obj/structure/closet/toolcloset/excavation,

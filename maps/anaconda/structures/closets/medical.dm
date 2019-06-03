@@ -1,13 +1,13 @@
 /*
- * Sierra Medical
+ * anaconda Medical
  */
 
-/obj/structure/closet/secure_closet/CMO_sierra
+/obj/structure/closet/secure_closet/CMO_anaconda
 	name = "chief medical officer's locker"
 	req_access = list(access_cmo)
 	closet_appearance = /decl/closet_appearance/secure_closet/cmo
 
-/obj/structure/closet/secure_closet/CMO_sierra/WillContain()
+/obj/structure/closet/secure_closet/CMO_anaconda/WillContain()
 	return list(
 		/obj/item/clothing/suit/bio_suit/cmo,
 		/obj/item/clothing/head/bio_hood/cmo,
@@ -29,12 +29,12 @@
 		/obj/item/weapon/storage/fancy/vials,
 	)
 
-/obj/structure/closet/secure_closet/medical_sierrasenior
+/obj/structure/closet/secure_closet/medical_anacondasenior
 	name = "surgeon's locker"
 	req_access = list(access_senmed)
 	closet_appearance = /decl/closet_appearance/secure_closet/medical/alt
 
-/obj/structure/closet/secure_closet/medical_sierrasenior/WillContain()
+/obj/structure/closet/secure_closet/medical_anacondasenior/WillContain()
 	return list(
 		/obj/item/clothing/suit/surgicalapron,
 		/obj/item/clothing/accessory/storage/white_vest,
@@ -48,12 +48,12 @@
 		/obj/item/weapon/storage/firstaid/adv,
 	)
 
-/obj/structure/closet/secure_closet/medical_sierra
+/obj/structure/closet/secure_closet/medical_anaconda
 	name = "doctor's locker"
 	req_access = list(access_medical_equip)
 	closet_appearance = /decl/closet_appearance/secure_closet/medical
 
-/obj/structure/closet/secure_closet/medical_sierra/WillContain()
+/obj/structure/closet/secure_closet/medical_anaconda/WillContain()
 	return list(
 		/obj/item/clothing/accessory/storage/white_vest,
 		/obj/item/device/radio/headset/headset_med,
@@ -68,11 +68,11 @@
 		/obj/item/weapon/storage/firstaid/adv,
 	)
 
-/obj/structure/closet/wardrobe/medic_sierra
+/obj/structure/closet/wardrobe/medic_anaconda
 	name = "medical wardrobe"
 	closet_appearance = /decl/closet_appearance/wardrobe/white
 
-/obj/structure/closet/wardrobe/medic_sierra/WillContain()
+/obj/structure/closet/wardrobe/medic_anaconda/WillContain()
 	return list(
 		RANDOM_SCRUBS = 3,
 		/obj/item/clothing/shoes/white = 3,
@@ -82,13 +82,13 @@
 		new /datum/atom_creator/weighted(list(/obj/item/weapon/storage/backpack/dufflebag/med, /obj/item/weapon/storage/backpack/messenger/med))
 	)
 
-/obj/structure/closet/secure_closet/chemical_sierra
+/obj/structure/closet/secure_closet/chemical_anaconda
 	name = "chemical closet"
 	desc = "Store dangerous chemicals in here."
 	closet_appearance = /decl/closet_appearance/secure_closet/medical
 	req_access = list(access_chemistry)
 
-/obj/structure/closet/secure_closet/chemical_sierra/WillContain()
+/obj/structure/closet/secure_closet/chemical_anaconda/WillContain()
 	return list(
 		/obj/item/weapon/storage/box/pillbottles = 2,
 		/obj/item/device/radio/headset/headset_med,

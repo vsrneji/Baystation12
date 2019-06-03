@@ -1,4 +1,3 @@
-var/const/NETWORK_CALYPSO     = "Charon"
 var/const/NETWORK_EXPEDITION  = "Expedition"
 var/const/NETWORK_POD         = "General Utility Pod"
 var/const/NETWORK_FIRST_DECK  = "First Deck"
@@ -8,7 +7,7 @@ var/const/NETWORK_SUPPLY      = "Supply"
 var/const/NETWORK_HANGAR      = "Hangar"
 var/const/NETWORK_PETROV      = "Petrov"
 
-/datum/map/sierra/get_network_access(var/network)
+/datum/map/anaconda/get_network_access(var/network)
 	switch(network)
 		if(NETWORK_CALYPSO)
 			return access_expedition_shuttle
@@ -24,7 +23,7 @@ var/const/NETWORK_PETROV      = "Petrov"
 			return access_expedition_shuttle
 	return get_shared_network_access(network) || ..()
 
-/datum/map/sierra
+/datum/map/anaconda
 	// Networks that will show up as options in the camera monitor program
 	station_networks = list(
 		NETWORK_ROBOTS,
@@ -40,8 +39,6 @@ var/const/NETWORK_PETROV      = "Petrov"
 		NETWORK_SUPPLY,
 		NETWORK_EXPEDITION,
 		NETWORK_HANGAR,
-		NETWORK_CALYPSO,
-		NETWORK_PETROV,
 		NETWORK_POD,
 		NETWORK_ALARM_ATMOS,
 		NETWORK_ALARM_CAMERA,
@@ -57,9 +54,6 @@ var/const/NETWORK_PETROV      = "Petrov"
 
 // Networks
 
-/obj/machinery/camera/network/exploration_shuttle
-	network = list(NETWORK_CALYPSO)
-
 /obj/machinery/camera/network/expedition
 	network = list(NETWORK_EXPEDITION)
 
@@ -74,9 +68,6 @@ var/const/NETWORK_PETROV      = "Petrov"
 
 /obj/machinery/camera/network/pod
 	network = list(NETWORK_POD)
-
-/obj/machinery/camera/network/petrov
-	network = list(NETWORK_PETROV)
 
 /obj/machinery/camera/network/supply
 	network = list(NETWORK_SUPPLY)
@@ -105,32 +96,18 @@ var/const/NETWORK_PETROV      = "Petrov"
 	network = list(NETWORK_COMMAND)
 
 //
-// T-Coms
-//
-
-/obj/machinery/telecomms/relay/preset/charon
-	id = "Charon Relay"
-	toggled = 0
-	autolinkers = list("s_relay")
-
-/obj/machinery/telecomms/relay/preset/aquila
-	id = "Aquila Relay"
-	toggled = 0
-	autolinkers = list("s_relay")
-
-//
 // SMES units
 //
 
 // Substation SMES
-/obj/machinery/power/smes/buildable/preset/sierra/substation/configure_and_install_coils()
+/obj/machinery/power/smes/buildable/preset/anaconda/substation/configure_and_install_coils()
 	component_parts += new /obj/item/weapon/smes_coil(src)
 	component_parts += new /obj/item/weapon/smes_coil(src)
 	_input_maxed = TRUE
 	_output_maxed = TRUE
 
 // Substation SMES (charged and with full I/O setting)
-/obj/machinery/power/smes/buildable/preset/sierra/substation_full/configure_and_install_coils()
+/obj/machinery/power/smes/buildable/preset/anaconda/substation_full/configure_and_install_coils()
 	component_parts += new /obj/item/weapon/smes_coil(src)
 	component_parts += new /obj/item/weapon/smes_coil(src)
 	_input_maxed = TRUE
@@ -140,7 +117,7 @@ var/const/NETWORK_PETROV      = "Petrov"
 	_fully_charged = TRUE
 
 // Main Engine output SMES
-/obj/machinery/power/smes/buildable/preset/sierra/engine_main/configure_and_install_coils()
+/obj/machinery/power/smes/buildable/preset/anaconda/engine_main/configure_and_install_coils()
 	component_parts += new /obj/item/weapon/smes_coil/super_io(src)
 	component_parts += new /obj/item/weapon/smes_coil/super_io(src)
 	component_parts += new /obj/item/weapon/smes_coil/super_capacity(src)
@@ -152,7 +129,7 @@ var/const/NETWORK_PETROV      = "Petrov"
 	_fully_charged = TRUE
 
 // Shuttle SMES
-/obj/machinery/power/smes/buildable/preset/sierra/shuttle/configure_and_install_coils()
+/obj/machinery/power/smes/buildable/preset/anaconda/shuttle/configure_and_install_coils()
 	component_parts += new /obj/item/weapon/smes_coil/super_io(src)
 	_input_maxed = TRUE
 	_output_maxed = TRUE
@@ -161,7 +138,7 @@ var/const/NETWORK_PETROV      = "Petrov"
 	_fully_charged = TRUE
 
 // Charon's smes - Coltrane97@inf-dev
-/obj/machinery/power/smes/buildable/preset/sierra/shuttle/charon/configure_and_install_coils()
+/obj/machinery/power/smes/buildable/preset/anaconda/shuttle/charon/configure_and_install_coils()
 	component_parts += new /obj/item/weapon/smes_coil/super_io(src)
 	component_parts += new /obj/item/weapon/smes_coil/super_capacity(src)
 	_input_maxed = TRUE
@@ -171,7 +148,7 @@ var/const/NETWORK_PETROV      = "Petrov"
 	_fully_charged = TRUE
 
 // Hangar SMES. Charges the shuttles so needs a pretty big throughput.
-/obj/machinery/power/smes/buildable/preset/sierra/hangar/configure_and_install_coils()
+/obj/machinery/power/smes/buildable/preset/anaconda/hangar/configure_and_install_coils()
 	component_parts += new /obj/item/weapon/smes_coil/super_io(src)
 	component_parts += new /obj/item/weapon/smes_coil/super_io(src)
 	_input_maxed = TRUE
@@ -191,7 +168,7 @@ var/const/NETWORK_ENGINEERING_OUTPOST = "Engineering Outpost"
 		if(NETWORK_ENGINE, NETWORK_ENGINEERING_OUTPOST)
 			return access_engine
 
-/datum/map/sierra/default_internal_channels()
+/datum/map/anaconda/default_internal_channels()
 	return list(
 		num2text(PUB_FREQ)   = list(),
 		num2text(AI_FREQ)    = list(access_synth),

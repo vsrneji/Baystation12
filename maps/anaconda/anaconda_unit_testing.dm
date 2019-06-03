@@ -1,4 +1,4 @@
-/datum/map/sierra
+/datum/map/anaconda
 	// Unit test exemptions
 	apc_test_exempt_areas = list(
 		/area/engineering/atmos/storage = NO_SCRUBBER|NO_VENT,

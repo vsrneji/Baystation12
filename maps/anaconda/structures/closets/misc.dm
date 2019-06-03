@@ -1,14 +1,14 @@
 /*
- * Sierra Misc
+ * anaconda Misc
  */
 
-/decl/closet_appearance/secure_closet/sierra/crew
+/decl/closet_appearance/secure_closet/anaconda/crew
 	color = COLOR_BABY_BLUE
 	extra_decals = list(
 		"stripe_vertical_mid_full" =  COLOR_OFF_WHITE
 	)
 
-/decl/closet_appearance/secure_closet/sierra/corporate
+/decl/closet_appearance/secure_closet/anaconda/corporate
 	color = COLOR_BOTTLE_GREEN
 	extra_decals = list(
 		"stripe_vertical_mid_full" = COLOR_OFF_WHITE
@@ -50,7 +50,7 @@
 
 /obj/structure/closet/secure_closet/crew
 	name = "crew equipment locker"
-	closet_appearance = /decl/closet_appearance/secure_closet/sierra/crew
+	closet_appearance = /decl/closet_appearance/secure_closet/anaconda/crew
 
 /obj/structure/closet/secure_closet/crew/WillContain()
 	return list(
@@ -62,5 +62,5 @@
 
 /obj/structure/closet/secure_closet/crew/research
 	name = "research equipment locker"
-	closet_appearance = /decl/closet_appearance/secure_closet/sierra/corporate
+	closet_appearance = /decl/closet_appearance/secure_closet/anaconda/corporate
 

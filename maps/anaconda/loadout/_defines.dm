@@ -1,5 +1,5 @@
-//The following is a list of defs and blacklist to be used (or not) for the Sierra loadout.
-/datum/map/sierra
+//The following is a list of defs and blacklist to be used (or not) for the anaconda loadout.
+/datum/map/anaconda
 	loadout_blacklist = list(/datum/gear/union_card, /datum/gear/eyes/security/aviators, \
 	/datum/gear/suit/labcoat_corp, /datum/gear/suit/labcoat_corp_rd, \
 	/datum/gear/uniform/corp_guard, /datum/gear/uniform/corp_exec, /datum/gear/uniform/corp_overalls, /datum/gear/uniform/corp_flight,

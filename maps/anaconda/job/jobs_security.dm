@@ -11,7 +11,7 @@
 	alt_titles = list(
 		"Security Sergeant",
 		)
-	outfit_type = /decl/hierarchy/outfit/job/sierra/crew/security/warden
+	outfit_type = /decl/hierarchy/outfit/job/anaconda/crew/security/warden
 	allowed_branches = list(/datum/mil_branch/employee)
 	allowed_ranks = list(/datum/mil_rank/civ/nt)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_ADEPT,
@@ -50,7 +50,7 @@
 		"Criminal Investigator",
 		"Forensic Technician"
 		)
-	outfit_type = /decl/hierarchy/outfit/job/sierra/crew/security/detective
+	outfit_type = /decl/hierarchy/outfit/job/anaconda/crew/security/detective
 	allowed_branches = list(/datum/mil_branch/employee, /datum/mil_branch/civilian, /datum/mil_branch/contractor)
 	allowed_ranks = list(/datum/mil_rank/civ/nt, /datum/mil_rank/civ/contractor, /datum/mil_rank/civ/civ)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
@@ -89,7 +89,7 @@
 
 	skill_points = 20
 
-	outfit_type = /decl/hierarchy/outfit/job/sierra/crew/security/officer
+	outfit_type = /decl/hierarchy/outfit/job/anaconda/crew/security/officer
 	allowed_branches = list(/datum/mil_branch/employee, /datum/mil_branch/contractor)
 	allowed_ranks = list(/datum/mil_rank/civ/nt, /datum/mil_rank/civ/contractor)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,

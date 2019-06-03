@@ -1,16 +1,16 @@
 /obj/structure/sign/dedicationplaque
-	name = "\improper NSV Sierra dedication plaque"
+	name = "\improper NSV anaconda dedication plaque"
 	icon = 'icons/obj/decals.dmi'
 	icon_state = "lightplaque"
 
 /obj/structure/sign/dedicationplaque/Initialize()
 	. = ..()
-	desc = "N.S.V. Sierra - Modified Mako Class - NanoTrasen Registry 3525 - Blume Ship Yards, Earth - Fourth Vessel To Bear The Name - Launched [game_year - 12] - Sol Central Government - 'Travels to the abyss always pays off.'"
+	desc = "N.S.V. anaconda - Modified Mako Class - NanoTrasen Registry 3525 - Blume Ship Yards, Earth - Fourth Vessel To Bear The Name - Launched [game_year - 12] - Sol Central Government - 'Travels to the abyss always pays off.'"
 
 /obj/structure/sign/ecplaque
 	name = "\improper Expeditionary Directives"
 	desc = "A plaque with Expeditionary Corps logo etched in it."
-	icon = 'maps/sierra/icons/obj/solgov-decals.dmi'
+	icon = 'maps/anaconda/icons/obj/solgov-decals.dmi'
 	icon_state = "ecplaque"
 	var/directives = {"<hr><center>
 		1. <b>Exploring the unknown is your Primary Mission</b><br>
@@ -54,19 +54,19 @@
 
 /obj/effect/floor_decal/scglogo
 	alpha = 230
-	icon = 'maps/sierra/icons/obj/solgov_floor.dmi'
+	icon = 'maps/anaconda/icons/obj/solgov_floor.dmi'
 	icon_state = "1,1"
 
 /obj/structure/sign/solgov
 	name = "\improper SolGov Seal"
 	desc = "A sign which signifies who this vessel belongs to."
-	icon = 'maps/sierra/icons/obj/solgov-decals.dmi'
+	icon = 'maps/anaconda/icons/obj/solgov-decals.dmi'
 	icon_state = "solgovseal"
 
 /obj/structure/sign/double/solgovflag
 	name = "Sol Central Government Flag"
 	desc = "The flag of the Sol Central Government, a symbol of many things to many people."
-	icon = 'maps/sierra/icons/obj/solgov-decals.dmi'
+	icon = 'maps/anaconda/icons/obj/solgov-decals.dmi'
 
 /obj/structure/sign/double/solgovflag/left
 	icon_state = "solgovflag-left"

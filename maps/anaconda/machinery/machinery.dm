@@ -1,14 +1,14 @@
-//Shouldn't be a lot in here, only sierra versions of existing machines that need a different access req or something along those lines.
+//Shouldn't be a lot in here, only anaconda versions of existing machines that need a different access req or something along those lines.
 
-/obj/machinery/drone_fabricator/sierra
-	fabricator_tag = "NES Sierra Maintenance"
+/obj/machinery/drone_fabricator/anaconda
+	fabricator_tag = "NES anaconda Maintenance"
 
-/obj/machinery/drone_fabricator/sierra/adv
+/obj/machinery/drone_fabricator/anaconda/adv
 	name = "advanced drone fabricator"
 	fabricator_tag = "SFV Arrow Maintenance"
 	drone_type = /mob/living/silicon/robot/drone/construction
 
-//telecommunications gubbins for sierra-specific networks
+//telecommunications gubbins for anaconda-specific networks
 
 /obj/machinery/telecomms/hub/preset
 	id = "Hub"

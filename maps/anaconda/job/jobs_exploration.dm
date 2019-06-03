@@ -10,7 +10,7 @@
 	minimal_player_age = 7
 	economic_power = 7
 	ideal_character_age = 35
-	outfit_type = /decl/hierarchy/outfit/job/sierra/crew/exploration/el
+	outfit_type = /decl/hierarchy/outfit/job/anaconda/crew/exploration/el
 	allowed_branches = list(/datum/mil_branch/employee)
 	allowed_ranks = list(/datum/mil_rank/civ/nt)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
@@ -41,7 +41,7 @@
 	selection_color = "#68099e"
 	ideal_character_age = 20
 	economic_power = 3
-	outfit_type = /decl/hierarchy/outfit/job/sierra/crew/exploration/explorer
+	outfit_type = /decl/hierarchy/outfit/job/anaconda/crew/exploration/explorer
 	allowed_branches = list(/datum/mil_branch/employee, /datum/mil_branch/contractor)
 	allowed_ranks = list(/datum/mil_rank/civ/nt, /datum/mil_rank/civ/contractor)
 	min_skill = list(   SKILL_EVA 		= SKILL_BASIC,
@@ -71,7 +71,7 @@
 	selection_color = "#68099e"
 	ideal_character_age = 24
 	economic_power = 4
-	outfit_type = /decl/hierarchy/outfit/job/sierra/crew/exploration/pilot
+	outfit_type = /decl/hierarchy/outfit/job/anaconda/crew/exploration/pilot
 	allowed_branches = list(/datum/mil_branch/employee, /datum/mil_branch/contractor)
 	allowed_ranks = list(/datum/mil_rank/civ/nt, /datum/mil_rank/civ/contractor)
 	min_skill = list(   SKILL_EVA			= SKILL_BASIC,
@@ -100,7 +100,7 @@
 	supervisors = "the Captain and the Exploration Leader"
 	selection_color = "#68099e"
 	ideal_character_age = 34
-	outfit_type = /decl/hierarchy/outfit/job/sierra/crew/exploration/medic
+	outfit_type = /decl/hierarchy/outfit/job/anaconda/crew/exploration/medic
 	allowed_branches = list(/datum/mil_branch/employee, /datum/mil_branch/contractor)
 	allowed_ranks = list(/datum/mil_rank/civ/nt, /datum/mil_rank/civ/contractor)
 
@@ -139,7 +139,7 @@
 	selection_color = "#68099e"
 	ideal_character_age = 28
 	economic_power = 4
-	outfit_type = /decl/hierarchy/outfit/job/sierra/crew/exploration/engineer
+	outfit_type = /decl/hierarchy/outfit/job/anaconda/crew/exploration/engineer
 	allowed_branches = list(/datum/mil_branch/employee, /datum/mil_branch/contractor)
 	allowed_ranks = list(/datum/mil_rank/civ/nt, /datum/mil_rank/civ/contractor)
 

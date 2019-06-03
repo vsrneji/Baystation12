@@ -4,7 +4,7 @@
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(/datum/mil_rank/civ/civ)
 
-/datum/map/sierra
+/datum/map/anaconda
 	branch_types = list(
 		/datum/mil_branch/civilian,
 		/datum/mil_branch/contractor,

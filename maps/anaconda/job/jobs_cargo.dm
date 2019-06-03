@@ -8,7 +8,7 @@
 	economic_power = 8
 	minimal_player_age = 7
 	ideal_character_age = 35
-	outfit_type = /decl/hierarchy/outfit/job/sierra/crew/supply/quartermaster
+	outfit_type = /decl/hierarchy/outfit/job/anaconda/crew/supply/quartermaster
 	allowed_branches = list(/datum/mil_branch/employee)
 	allowed_ranks = list(/datum/mil_rank/civ/nt)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_ADEPT,
@@ -36,7 +36,7 @@
 	spawn_positions = 2
 	supervisors = "the Quartermaster and Head of Personnel"
 	ideal_character_age = 24
-	outfit_type = /decl/hierarchy/outfit/job/sierra/crew/supply/tech
+	outfit_type = /decl/hierarchy/outfit/job/anaconda/crew/supply/tech
 	allowed_branches = list(/datum/mil_branch/employee, /datum/mil_branch/contractor)
 	allowed_ranks = list(/datum/mil_rank/civ/nt, /datum/mil_rank/civ/contractor)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
@@ -72,7 +72,7 @@
 
 	max_skill = list(   SKILL_PILOT       = SKILL_MAX)
 
-	outfit_type = /decl/hierarchy/outfit/job/sierra/crew/supply/prospector
+	outfit_type = /decl/hierarchy/outfit/job/anaconda/crew/supply/prospector
 	allowed_branches = list(/datum/mil_branch/employee, /datum/mil_branch/contractor)
 	allowed_ranks = list(/datum/mil_rank/civ/nt, /datum/mil_rank/civ/contractor)
 
@@ -90,7 +90,7 @@
 	supervisors = "the Quartermaster and Supply Personnel"
 	ideal_character_age = 20
 	selection_color = "#515151"
-	outfit_type = /decl/hierarchy/outfit/job/sierra/crew/supply/assistant
+	outfit_type = /decl/hierarchy/outfit/job/anaconda/crew/supply/assistant
 	allowed_branches = list(/datum/mil_branch/employee, /datum/mil_branch/civilian, /datum/mil_branch/contractor)
 	allowed_ranks = list(/datum/mil_rank/civ/nt, /datum/mil_rank/civ/contractor, /datum/mil_rank/civ/civ)
 	min_skill = list(	SKILL_BUREAUCRACY = SKILL_BASIC,
