@@ -1,6 +1,3 @@
-/************
-* NSV sierra *
-************/
 var/const/access_aquila = 76
 /datum/access/aquila
 	id = access_aquila
@@ -12,13 +9,6 @@ var/const/access_aquila = 76
 	id = access_expedition_shuttle_helm
 	desc = "Charon Helm"
 	region = ACCESS_REGION_RESEARCH
-
-/var/const/access_iaa = 78
-/datum/access/iaa
-	id = access_iaa
-	desc = "Internal Affairs Agent"
-	region = ACCESS_REGION_COMMAND
-	access_type = ACCESS_TYPE_NONE //Ruler of their own domain, Captain and RD cannot enter
 
 /var/const/access_gun = 87
 /datum/access/gun
