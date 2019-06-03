@@ -16,7 +16,7 @@
 	#include "anaconda_turfs.dm"
 	#include "anaconda_unit_testing.dm"
 
-	#include "datums/uniforms.dm"
+	/*#include "datums/uniforms.dm"
 	#include "datums/reports.dm"
 	#include "datums/shackle_law_sets.dm"
 	#include "datums/supplypacks/security.dm"
@@ -41,14 +41,14 @@
 	#include "items/clothing/solgov-head.dm"
 	#include "items/clothing/solgov-suit.dm"
 	#include "items/clothing/solgov-under.dm"
-	#include "items/clothing/storages.dm"
+	#include "items/clothing/storages.dm"*/
 
-	#include "job/access.dm"
+	/*#include "job/access.dm"
 	#include "job/jobs.dm"
 	#include "job/outfits.dm"
-	#include "job/infinity.dm"
+	#include "job/infinity.dm"*/
 
-	#include "job/jobs_cargo.dm"
+	/*#include "job/jobs_cargo.dm"
 	#include "job/jobs_command.dm"
 	#include "job/jobs_engineering.dm"
 	#include "job/jobs_exploration.dm"
@@ -56,9 +56,9 @@
 	#include "job/jobs_misc.dm"
 	#include "job/jobs_research.dm"
 	#include "job/jobs_security.dm"
-	#include "job/jobs_service.dm"
+	#include "job/jobs_service.dm"*/
 
-	#include "machinery/alarm.dm"
+	/*#include "machinery/alarm.dm"
 	#include "machinery/apc.dm"
 	#include "machinery/keycard authentication.dm"
 	#include "machinery/machinery.dm"
@@ -66,14 +66,14 @@
 	#include "machinery/random.dm"
 	#include "machinery/thrusters.dm"
 	#include "machinery/uniform_vendor.dm"
-	#include "machinery/vendors.dm"
+	#include "machinery/vendors.dm"*/
 
-	#include "structures/closets.dm"
-	#include "structures/other.dm"
-	#include "structures/override.dm"
-	#include "structures/signs.dm"
+	//#include "structures/closets.dm"
+	//#include "structures/other.dm"
+	//#include "structures/override.dm"
+	//#include "structures/signs.dm"
 
-	#include "structures/closets/armory.dm"
+	/*#include "structures/closets/armory.dm"
 	#include "structures/closets/command.dm"
 	#include "structures/closets/engineering.dm"
 	#include "structures/closets/medical.dm"
@@ -82,9 +82,9 @@
 	#include "structures/closets/security.dm"
 	#include "structures/closets/services.dm"
 	#include "structures/closets/supply.dm"
-	#include "structures/closets/exploration.dm"
+	#include "structures/closets/exploration.dm"*/
 
-	#include "loadout/_defines.dm"
+	/*#include "loadout/_defines.dm"
 	#include "loadout/loadout_accessories.dm"
 	#include "loadout/loadout_eyes.dm"
 	#include "loadout/loadout_gloves.dm"
@@ -94,7 +94,7 @@
 	#include "loadout/loadout_uniform.dm"
 	#include "loadout/loadout_tactical.dm"
 	#include "loadout/loadout_xeno.dm"
-	#include "loadout/~defines.dm"
+	#include "loadout/~defines.dm"*/
 
 	#include "anaconda-1.dmm"
 	#include "anaconda-2.dmm"
