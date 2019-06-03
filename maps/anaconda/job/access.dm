@@ -10,12 +10,6 @@ var/const/access_aquila = 76
 	desc = "Charon Helm"
 	region = ACCESS_REGION_RESEARCH
 
-/var/const/access_gun = 87
-/datum/access/gun
-	id = access_gun
-	desc = "BSA Cannon"
-	region = ACCESS_REGION_COMMAND
-
 /var/const/access_expedition_shuttle = 88
 /datum/access/exploration_shuttle
 	id = access_expedition_shuttle
