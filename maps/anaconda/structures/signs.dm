@@ -1,5 +1,5 @@
 /obj/structure/sign/dedicationplaque
-	name = "\improper NSV anaconda dedication plaque"
+	name = "\improper ITV anaconda dedication plaque"
 	icon = 'icons/obj/decals.dmi'
 	icon_state = "lightplaque"
 

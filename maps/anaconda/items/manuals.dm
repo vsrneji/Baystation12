@@ -67,7 +67,7 @@
 
 /obj/item/weapon/book/manual/nt_sop
 	name = "NT Standard Operating Procedures"
-	desc = "SOP aboard the NSV anaconda."
+	desc = "SOP aboard the ITV anaconda."
 	icon = 'icons/obj/library_inf.dmi'
 	icon_state = "bookNTsop"
 	author = "Employee Materials"
@@ -90,7 +90,7 @@
 
 /obj/item/weapon/book/manual/nt_tc
 	name = "NT Threat Codes"
-	desc = "TC aboard the NSV anaconda."
+	desc = "TC aboard the ITV anaconda."
 	icon = 'icons/obj/library_inf.dmi'
 	icon_state = "bookNTtc"
 	author = "Ship Rule Materials"
@@ -159,7 +159,7 @@
 	<img src = ntlogo.png>
 	</center>
 	<b>ОТ:</b> Swadian Barwuds<br>
-	<b>КОМУ:</b> Капитану NSV anaconda<br>
+	<b>КОМУ:</b> Капитану ITV anaconda<br>
 	<b>ТЕМА:</b> Общий приказ<br>
 	<hr>
 	Капитан,<br>
@@ -205,8 +205,8 @@
 	<img src = ntlogo.png>
 	</center>
 	<b>ОТ:</b> Kim Taggert, операционный директор НТ<br>
-	<b>КОМУ:</b> Капитану NSV anaconda<br>
-	<b>А ТАКЖЕ:</b> Агенту Внутренних Дел NSV anaconda<br>
+	<b>КОМУ:</b> Капитану ITV anaconda<br>
+	<b>А ТАКЖЕ:</b> Агенту Внутренних Дел ITV anaconda<br>
 	<b>ТЕМА:</b> Протокол ТЕНЬ<br>
 	<hr>
 	<li>Это - небольшое дополнение к стандартным процедурам. В отлчии от остальных СОП, данна&#255; процедура не должна оглашатьс&#255; персоналу судна. Данный протокол необходим дл&#255; избежани&#255; непри&#255;тных казусов после миссии.</li>

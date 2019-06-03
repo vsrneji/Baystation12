@@ -2,7 +2,7 @@
 
 /obj/item/weapon/card/id/anaconda
 	name = "identification card"
-	desc = "An identification card issued to personnel aboard the NSV anaconda."
+	desc = "An identification card issued to personnel aboard the ITV anaconda."
 	job_access_type = /datum/job/assistant
 
 /obj/item/weapon/card/id/anaconda/silver
@@ -21,17 +21,17 @@
 
 // NanoTrasen Personnel and Passengers
 /obj/item/weapon/card/id/anaconda/passenger
-	desc = "An identification card issued to passengers aboard the NSV anaconda."
+	desc = "An identification card issued to passengers aboard the ITV anaconda."
 	job_access_type = /datum/job/assistant
 	color = "#ccecff"
 
 /obj/item/weapon/card/id/anaconda/crew
-	desc = "An identification card issued to NanoTrasen crewmembers aboard the NSV anaconda."
+	desc = "An identification card issued to NanoTrasen crewmembers aboard the ITV anaconda."
 	job_access_type = /datum/job/assistant
 	color = "#ccecff"
 
 /obj/item/weapon/card/id/anaconda/crew/medical
-	desc = "An identification card issued to medical crewmembers aboard the NSV anaconda."
+	desc = "An identification card issued to medical crewmembers aboard the ITV anaconda."
 	job_access_type = /datum/job/doctor
 	detail_color = COLOR_PALE_BLUE_GRAY
 
@@ -59,7 +59,7 @@
 	extra_details = list("onegoldstripe")
 
 /obj/item/weapon/card/id/anaconda/crew/security
-	desc = "An identification card issued to asset protection depatment's personnel aboard the NSV anaconda."
+	desc = "An identification card issued to asset protection depatment's personnel aboard the ITV anaconda."
 	job_access_type = /datum/job/officer
 	detail_color = "#e00000"
 
@@ -78,7 +78,7 @@
 	extra_details = list("onegoldstripe")
 
 /obj/item/weapon/card/id/anaconda/crew/engineering
-	desc = "An identification card issued to engineering personnel aboard the NSV anaconda."
+	desc = "An identification card issued to engineering personnel aboard the ITV anaconda."
 	job_access_type = /datum/job/engineer
 	detail_color = COLOR_SUN
 
@@ -112,7 +112,7 @@
 
 
 /obj/item/weapon/card/id/anaconda/crew/service //unused
-	desc = "An identification card issued to service personnel aboard the NSV anaconda."
+	desc = "An identification card issued to service personnel aboard the ITV anaconda."
 	detail_color = COLOR_CIVIE_GREEN
 
 /obj/item/weapon/card/id/anaconda/crew/service/janitor
@@ -151,7 +151,7 @@
 //Research
 
 /obj/item/weapon/card/id/anaconda/crew/research
-	desc = "A card issued to research personnel aboard the NSV anaconda."
+	desc = "A card issued to research personnel aboard the ITV anaconda."
 	job_access_type = /datum/job/scientist_assistant
 	detail_color = COLOR_RESEARCH
 	color = COLOR_WHITE
@@ -172,14 +172,14 @@
 	job_access_type = /datum/job/roboticist
 
 /obj/item/weapon/card/id/anaconda/crew/liaison
-	desc = "A card issued to corporate represenatives aboard the NSV anaconda."
+	desc = "A card issued to corporate represenatives aboard the ITV anaconda."
 	job_access_type = /datum/job/iaa
 	color = COLOR_GRAY40
 	detail_color = COLOR_COMMAND_BLUE
 	extra_details = list("onegoldstripe")
 
 /obj/item/weapon/card/id/anaconda/crew/adjutant
-	desc = "A card issued to command's support personnel aboard the NSV anaconda."
+	desc = "A card issued to command's support personnel aboard the ITV anaconda."
 	job_access_type = /datum/job/adjutant
 	color = "#ccecff"
 	detail_color = COLOR_COMMAND_BLUE
@@ -197,7 +197,7 @@
 
 //Stowaway
 /obj/item/weapon/card/id/anaconda/stowaway
-	desc = "An identification card issued to personnel aboard the NSV anaconda. Looks like the photo fell off this one."
+	desc = "An identification card issued to personnel aboard the ITV anaconda. Looks like the photo fell off this one."
 	job_access_type = /datum/job/stowaway
 	color = "#b4cbd7"
 
