@@ -1,6 +1,6 @@
 /datum/map/anaconda
 	name = "Anaconda"
-	full_name = "SUV Anaconda" //Space Universal Vessel
+	full_name = "ITV Anaconda" //Indie Trade Vessel
 	path = "anaconda"
 
 	station_levels = list(1,2,3)
@@ -14,7 +14,7 @@
 	allowed_spawns = list("Cryogenic Storage", "Cyborg Storage")
 	default_spawn = "Cryogenic Storage"
 
-	station_name  = "SUV Anaconda"
+	station_name  = "ITV Anaconda"
 	station_short = "Anaconda"
 	dock_name     = "TBD"
 	boss_name     = "Captain"
@@ -51,7 +51,7 @@
 	to_chat(victim, "This area of space is uncharted, away from SCG territory.")
 
 /datum/map/anaconda/send_welcome()
-	var/welcome_text = "<center><img src = ocielogo.png /><br /><font size = 3><b>SUV Anaconda</b> Sensor Readings:</font><br>"
+	var/welcome_text = "<center><img src = daislogo.png /><br /><font size = 3><b>ITV Anaconda</b> DAIS's Sensors Readings:</font><br>"
 	welcome_text += "Report generated on [stationdate2text()] at [stationtime2text()]</center><br /><br />"
 	welcome_text += "<hr>Current system:<br /><b>[system_name()]</b><br /><br>"
 	welcome_text += "Next system targeted for jump:<br /><b>[generate_system_name()]</b><br /><br>"
@@ -85,7 +85,7 @@
 		welcome_text += "<br>No distress calls logged.<br />"
 	welcome_text += "<hr>"
 
-	post_comm_message("SUV Anaconda Sensor Readings", welcome_text)
+	post_comm_message("ITV Anaconda Sensor Readings", welcome_text)
 	minor_announcement.Announce(message = "New [GLOB.using_map.company_name] Update available at all communication consoles.")
 
 /turf/simulated/wall //landlubbers go home
